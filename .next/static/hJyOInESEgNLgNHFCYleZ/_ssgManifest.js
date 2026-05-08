@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Flocalidades\u002F[distrito]","\u002Flocalidades\u002F[distrito]\u002F[concelho]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

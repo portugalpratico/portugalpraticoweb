@@ -2,36 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import AdSlot from "@/components/AdSlot";
+import { portugal } from "@/lib/data/portugal";
 
 export const metadata: Metadata = {
   title: "Localidades de Portugal — Distritos, Concelhos e Freguesias",
   description:
-    "Explore todos os distritos, concelhos e freguesias de Portugal. Informação geográfica completa com população e códigos postais.",
+    "Explore todos os distritos, concelhos e freguesias de Portugal. Informação geográfica completa com população, área e códigos postais.",
   alternates: { canonical: "/localidades" },
 };
 
-const distritos = [
-  { nome: "Aveiro", slug: "aveiro", concelhos: 19, populacao: "714.200" },
-  { nome: "Beja", slug: "beja", concelhos: 14, populacao: "152.758" },
-  { nome: "Braga", slug: "braga", concelhos: 14, populacao: "848.185" },
-  { nome: "Bragança", slug: "braganca", concelhos: 12, populacao: "136.252" },
-  { nome: "Castelo Branco", slug: "castelo-branco", concelhos: 11, populacao: "196.264" },
-  { nome: "Coimbra", slug: "coimbra", concelhos: 17, populacao: "430.104" },
-  { nome: "Évora", slug: "evora", concelhos: 14, populacao: "166.726" },
-  { nome: "Faro", slug: "faro", concelhos: 16, populacao: "451.006" },
-  { nome: "Guarda", slug: "guarda", concelhos: 14, populacao: "160.939" },
-  { nome: "Leiria", slug: "leiria", concelhos: 16, populacao: "470.930" },
-  { nome: "Lisboa", slug: "lisboa", concelhos: 18, populacao: "2.250.533" },
-  { nome: "Portalegre", slug: "portalegre", concelhos: 15, populacao: "118.506" },
-  { nome: "Porto", slug: "porto", concelhos: 18, populacao: "1.817.174" },
-  { nome: "Santarém", slug: "santarem", concelhos: 21, populacao: "453.638" },
-  { nome: "Setúbal", slug: "setubal", concelhos: 13, populacao: "851.258" },
-  { nome: "Viana do Castelo", slug: "viana-do-castelo", concelhos: 10, populacao: "244.836" },
-  { nome: "Vila Real", slug: "vila-real", concelhos: 14, populacao: "206.661" },
-  { nome: "Viseu", slug: "viseu", concelhos: 24, populacao: "377.653" },
-  { nome: "Açores", slug: "acores", concelhos: 19, populacao: "246.772" },
-  { nome: "Madeira", slug: "madeira", concelhos: 11, populacao: "255.082" },
-];
+const totalConcelhos = portugal.reduce((s, d) => s + d.concelhos.length, 0);
+const totalFreguesias = portugal.reduce((s, d) => s + d.concelhos.reduce((ss, c) => ss + c.freguesias, 0), 0);
+const totalPop = portugal.reduce((s, d) => s + d.populacao, 0);
 
 export default function LocalidadesPage() {
   return (
@@ -43,39 +25,77 @@ export default function LocalidadesPage() {
         <p className="text-gray-500">Explore todos os distritos, concelhos e freguesias de Portugal continental e ilhas.</p>
       </div>
 
-      <AdSlot format="horizontal" className="mb-8" />
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        {distritos.map((d) => (
-          <Link
-            key={d.slug}
-            href={`/localidades/${d.slug}`}
-            className="card group hover:-translate-y-0.5 transition-all"
-          >
-            <div className="flex items-center justify-between mb-2">
-              <h2 className="font-semibold text-gray-900 group-hover:text-[#046A38] transition-colors">{d.nome}</h2>
-              <svg className="w-4 h-4 text-gray-300 group-hover:text-[#046A38] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </div>
-            <div className="flex gap-4 text-xs text-gray-500">
-              <span>{d.concelhos} concelhos</span>
-              <span>{d.populacao} hab.</span>
-            </div>
-          </Link>
+      {/* Summary stats */}
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+        {[
+          { label: "Distritos", value: portugal.length },
+          { label: "Concelhos", value: totalConcelhos },
+          { label: "Freguesias", value: totalFreguesias.toLocaleString("pt-PT") },
+          { label: "População", value: `${(totalPop / 1_000_000).toFixed(1)}M` },
+        ].map((s) => (
+          <div key={s.label} className="bg-white border border-gray-100 rounded-2xl p-4 text-center shadow-card">
+            <p className="text-2xl font-bold text-[#046A38]">{s.value}</p>
+            <p className="text-xs text-gray-500 mt-0.5">{s.label}</p>
+          </div>
         ))}
       </div>
 
-      <section className="mt-10">
-        <h2 className="section-title mb-4">Sobre as Localidades de Portugal</h2>
-        <div className="card prose prose-sm text-gray-600 max-w-none">
+      <AdSlot format="horizontal" className="mb-8" />
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        {portugal.map((d) => {
+          const totalFreg = d.concelhos.reduce((s, c) => s + c.freguesias, 0);
+          return (
+            <Link
+              key={d.slug}
+              href={`/localidades/${d.slug}`}
+              className="group bg-white rounded-2xl border border-gray-100 shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200 p-5"
+            >
+              <div className="flex items-start justify-between mb-3">
+                <h2 className="font-bold text-gray-900 group-hover:text-[#046A38] transition-colors text-base">
+                  {d.nome}
+                </h2>
+                <svg className="w-4 h-4 text-gray-300 group-hover:text-[#046A38] transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+              <div className="grid grid-cols-3 gap-2 text-center">
+                <div className="bg-gray-50 rounded-lg py-1.5">
+                  <p className="font-semibold text-gray-800 text-sm">{d.concelhos.length}</p>
+                  <p className="text-xs text-gray-400">concelhos</p>
+                </div>
+                <div className="bg-gray-50 rounded-lg py-1.5">
+                  <p className="font-semibold text-gray-800 text-sm">{totalFreg}</p>
+                  <p className="text-xs text-gray-400">freg.</p>
+                </div>
+                <div className="bg-gray-50 rounded-lg py-1.5">
+                  <p className="font-semibold text-gray-800 text-sm">
+                    {d.populacao >= 1_000_000
+                      ? `${(d.populacao / 1_000_000).toFixed(1)}M`
+                      : `${Math.round(d.populacao / 1000)}k`}
+                  </p>
+                  <p className="text-xs text-gray-400">hab.</p>
+                </div>
+              </div>
+              <p className="text-xs text-gray-400 mt-2">Capital: {d.capital}</p>
+            </Link>
+          );
+        })}
+      </div>
+
+      <section className="mt-10 card">
+        <h2 className="text-lg font-bold text-gray-900 mb-3">Sobre as Localidades de Portugal</h2>
+        <div className="text-sm text-gray-600 space-y-2 leading-relaxed">
           <p>
             Portugal continental está dividido em <strong>18 distritos</strong> e as regiões autónomas dos <strong>Açores</strong> e <strong>Madeira</strong>.
-            No total, o país conta com <strong>308 municípios (concelhos)</strong> e mais de <strong>3.000 freguesias</strong>.
+            No total, o país conta com <strong>{totalConcelhos} municípios (concelhos)</strong> e mais de <strong>{totalFreguesias.toLocaleString("pt-PT")} freguesias</strong>.
           </p>
-          <p className="mt-3">
-            Os distritos mais populosos são <strong>Lisboa</strong> (2,2 milhões de habitantes), <strong>Porto</strong> (1,8 milhões)
-            e <strong>Setúbal</strong> (851 mil). Os menos populosos são <strong>Portalegre</strong> e <strong>Bragança</strong>.
+          <p>
+            Os distritos mais populosos são <strong>Lisboa</strong> (2,2 milhões), <strong>Porto</strong> (1,8 milhões) e <strong>Setúbal</strong> (851 mil).
+            Os menos populosos são <strong>Portalegre</strong> e <strong>Bragança</strong>.
+          </p>
+          <p>
+            Cada página de concelho inclui informação detalhada sobre população, área, número de freguesias, código postal e pontos de interesse.
           </p>
         </div>
       </section>
