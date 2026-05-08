@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Edward/source/repos/portugalpraticoweb/src/components/AdSlot.tsx"],"sourcesContent":["\"use client\";\n\ninterface AdSlotProps {\n  slot?: string;\n  format?: \"horizontal\" | \"rectangle\" | \"vertical\";\n  className?: string;\n}\n\nexport default function AdSlot({ format = \"horizontal\", className = \"\" }: AdSlotProps) {\n  const heights = {\n    horizontal: \"h-[90px]\",\n    rectangle: \"h-[250px]\",\n    vertical: \"h-[600px]\",\n  };\n\n  return (\n    <div className={`ad-slot ${heights[format]} w-full ${className}`}>\n      <span>Publicidade</span>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;AAAA;;AAQe,SAAS,OAAO,EAAE,SAAS,YAAY,EAAE,YAAY,EAAE,EAAe;IACnF,MAAM,UAAU;QACd,YAAY;QACZ,WAAW;QACX,UAAU;IACZ;IAEA,qBACE,8OAAC;QAAI,WAAW,CAAC,QAAQ,EAAE,OAAO,CAAC,OAAO,CAAC,QAAQ,EAAE,WAAW;kBAC9D,cAAA,8OAAC;sBAAK;;;;;;;;;;;AAGZ","debugId":null}}]
+}

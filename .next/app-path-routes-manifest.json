@@ -1,0 +1,20 @@
+{
+  "/api/codigo-postal/route": "/api/codigo-postal",
+  "/_not-found/page": "/_not-found",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/codigo-postal/[slug]/page": "/codigo-postal/[slug]",
+  "/localidades/[distrito]/page": "/localidades/[distrito]",
+  "/page": "/",
+  "/localidades/[distrito]/[concelho]/page": "/localidades/[distrito]/[concelho]",
+  "/codigo-postal/page": "/codigo-postal",
+  "/iban/page": "/iban",
+  "/localidades/page": "/localidades",
+  "/nif/page": "/nif",
+  "/simuladores/credito-habitacao/page": "/simuladores/credito-habitacao",
+  "/simuladores/iva/page": "/simuladores/iva",
+  "/simuladores/salario-liquido/page": "/simuladores/salario-liquido",
+  "/simuladores/juros-compostos/page": "/simuladores/juros-compostos",
+  "/feriados/page": "/feriados",
+  "/simuladores/page": "/simuladores"
+}

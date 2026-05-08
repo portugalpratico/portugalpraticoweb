@@ -1,0 +1,85 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Distrito {
+  id         Int        @id @default(autoincrement())
+  nome       String     @unique
+  slug       String     @unique
+  codigo     String     @unique
+  populacao  Int?
+  area       Float?
+  concelhos  Concelho[]
+  createdAt  DateTime   @default(now())
+
+  @@index([slug])
+}
+
+model Concelho {
+  id          Int         @id @default(autoincrement())
+  nome        String
+  slug        String
+  codigoIne   String?     @unique
+  populacao   Int?
+  area        Float?
+  distritoId  Int
+  distrito    Distrito    @relation(fields: [distritoId], references: [id])
+  freguesias  Freguesia[]
+  createdAt   DateTime    @default(now())
+
+  @@unique([slug, distritoId])
+  @@index([slug])
+}
+
+model Freguesia {
+  id            Int           @id @default(autoincrement())
+  nome          String
+  slug          String
+  codigoIne     String?       @unique
+  populacao     Int?
+  concelhoId    Int
+  concelho      Concelho      @relation(fields: [concelhoId], references: [id])
+  codigosPostais CodigoPostal[]
+  createdAt     DateTime      @default(now())
+
+  @@index([slug])
+}
+
+model CodigoPostal {
+  id          Int        @id @default(autoincrement())
+  cp4         String
+  cp3         String
+  codigoCompleto String  @unique
+  rua         String?
+  localidade  String
+  concelho    String
+  distrito    String
+  lat         Float?
+  lng         Float?
+  freguesiaId Int?
+  freguesia   Freguesia? @relation(fields: [freguesiaId], references: [id])
+  createdAt   DateTime   @default(now())
+
+  @@index([cp4])
+  @@index([localidade])
+  @@index([concelho])
+  @@index([codigoCompleto])
+}
+
+model Feriado {
+  id        Int      @id @default(autoincrement())
+  nome      String
+  data      DateTime
+  tipo      String   // nacional, municipal
+  ano       Int
+  descricao String?
+  createdAt DateTime @default(now())
+
+  @@index([ano])
+  @@index([data])
+}

@@ -1,0 +1,8 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/codigo-postal/page": "app/codigo-postal/page.js",
+  "/localidades/[distrito]/[concelho]/page": "app/localidades/[distrito]/[concelho]/page.js",
+  "/localidades/[distrito]/page": "app/localidades/[distrito]/page.js",
+  "/localidades/page": "app/localidades/page.js",
+  "/page": "app/page.js"
+}
