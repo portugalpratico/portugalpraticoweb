@@ -11,25 +11,32 @@ function fmt(n: number) {
 export default function IVACalculator() {
   const [value, setValue] = useState("");
   const [rate, setRate] = useState(23);
+  const [customRate, setCustomRate] = useState("");
+  const [useCustom, setUseCustom] = useState(false);
   const [mode, setMode] = useState<"add" | "remove">("add");
+
+  const effectiveRate = useCustom
+    ? parseFloat(customRate.replace(",", "."))
+    : rate;
+  const rateValid = !isNaN(effectiveRate) && effectiveRate > 0 && effectiveRate <= 100;
 
   const num = parseFloat(value.replace(",", "."));
   const valid = !isNaN(num) && num > 0;
 
-  const ivaAmount = valid
+  const ivaAmount = valid && rateValid
     ? mode === "add"
-      ? num * (rate / 100)
-      : num - num / (1 + rate / 100)
+      ? num * (effectiveRate / 100)
+      : num - num / (1 + effectiveRate / 100)
     : 0;
 
-  const total = valid
+  const total = valid && rateValid
     ? mode === "add"
       ? num + ivaAmount
       : num - ivaAmount
     : 0;
 
-  const base = valid
-    ? mode === "add" ? num : num / (1 + rate / 100)
+  const base = valid && rateValid
+    ? mode === "add" ? num : num / (1 + effectiveRate / 100)
     : 0;
 
   return (
@@ -57,13 +64,13 @@ export default function IVACalculator() {
       {/* Rate buttons */}
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-2">Taxa de IVA</label>
-        <div className="flex gap-2">
+        <div className="flex gap-2 flex-wrap">
           {RATES.map((r) => (
             <button
               key={r}
-              onClick={() => setRate(r)}
+              onClick={() => { setRate(r); setUseCustom(false); }}
               className={`flex-1 py-2.5 rounded-xl text-sm font-semibold border transition-colors ${
-                rate === r
+                !useCustom && rate === r
                   ? "bg-[#046A38] border-[#046A38] text-white"
                   : "bg-white border-gray-200 text-gray-700 hover:border-gray-300"
               }`}
@@ -71,6 +78,23 @@ export default function IVACalculator() {
               {r}%
             </button>
           ))}
+        </div>
+        <div className="mt-2 flex items-center gap-2">
+          <label className="text-sm text-gray-500 shrink-0">Outra taxa:</label>
+          <div className="relative flex-1 max-w-[140px]">
+            <input
+              type="number"
+              value={customRate}
+              onChange={(e) => { setCustomRate(e.target.value); setUseCustom(e.target.value !== ""); }}
+              onFocus={() => { if (customRate) setUseCustom(true); }}
+              placeholder="Ex: 5"
+              min="0.01"
+              max="100"
+              step="0.01"
+              className={`input-field pr-8 py-2 text-sm ${useCustom ? "border-[#046A38] ring-1 ring-[#046A38]" : ""}`}
+            />
+            <span className="absolute right-2.5 top-1/2 -translate-y-1/2 text-sm text-gray-400 pointer-events-none">%</span>
+          </div>
         </div>
       </div>
 
@@ -91,14 +115,14 @@ export default function IVACalculator() {
       </div>
 
       {/* Results */}
-      {valid && (
+      {valid && rateValid && (
         <div className="space-y-2 animate-fade-in text-sm">
           <div className="flex justify-between py-2 border-b border-gray-100">
             <span className="text-gray-600">Valor base (sem IVA)</span>
             <span className="font-medium">{fmt(base)}</span>
           </div>
           <div className="flex justify-between py-2 border-b border-gray-100">
-            <span className="text-gray-600">IVA ({rate}%)</span>
+            <span className="text-gray-600">IVA ({effectiveRate}%)</span>
             <span className="font-medium text-[#DA291C]">{fmt(ivaAmount)}</span>
           </div>
           <div className="flex justify-between py-2 bg-green-50 rounded-xl px-3">

@@ -1,9 +1,8 @@
 {
-  "/codigo-postal/page": "app/codigo-postal/page.js",
   "/feriados/page": "app/feriados/page.js",
-  "/localidades/[distrito]/[concelho]/page": "app/localidades/[distrito]/[concelho]/page.js",
-  "/localidades/[distrito]/page": "app/localidades/[distrito]/page.js",
   "/localidades/page": "app/localidades/page.js",
+  "/nif/page": "app/nif/page.js",
   "/page": "app/page.js",
+  "/simuladores/iva/page": "app/simuladores/iva/page.js",
   "/simuladores/page": "app/simuladores/page.js"
 }
