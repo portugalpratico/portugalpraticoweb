@@ -488,6 +488,10 @@ img, video {
   margin-bottom: 2rem;
 }
 
+.ml-1\.5 {
+  margin-left: .375rem;
+}
+
 .ml-2 {
   margin-left: .5rem;
 }
@@ -835,6 +839,10 @@ img, video {
   overflow: hidden;
 }
 
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
 .rounded {
   border-radius: .25rem;
 }
@@ -1104,6 +1112,11 @@ img, video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-3 {
@@ -1568,6 +1581,10 @@ body {
 }
 
 @media (width >= 640px) {
+  .sm\:table-cell {
+    display: table-cell;
+  }
+
   .sm\:h-36 {
     height: 9rem;
   }

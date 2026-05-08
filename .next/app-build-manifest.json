@@ -1,5 +1,33 @@
 {
   "pages": {
+    "/_not-found/page": [
+      "static/chunks/src_app_globals_b805903d.css",
+      "static/chunks/node_modules_next_7c89e613._.js",
+      "static/chunks/src_components_Header_tsx_69d15ee6._.js",
+      "static/chunks/src_app_layout_tsx_c0237562._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
+      "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
+      "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",
+      "static/chunks/node_modules_next_dist_2ecbf5fa._.js",
+      "static/chunks/node_modules_@swc_helpers_cjs_00636ac3._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_93808211._.js"
+    ],
+    "/codigo-postal/[slug]/page": [
+      "static/chunks/src_app_globals_b805903d.css",
+      "static/chunks/node_modules_next_7c89e613._.js",
+      "static/chunks/src_components_Header_tsx_69d15ee6._.js",
+      "static/chunks/src_app_layout_tsx_c0237562._.js",
+      "static/chunks/src_components_AdSlot_tsx_8aedb3b2._.js",
+      "static/chunks/src_app_codigo-postal_[slug]_page_tsx_dca8d8e2._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
+      "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
+      "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",
+      "static/chunks/node_modules_next_dist_2ecbf5fa._.js",
+      "static/chunks/node_modules_@swc_helpers_cjs_00636ac3._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_93808211._.js"
+    ],
     "/codigo-postal/page": [
       "static/chunks/src_app_globals_b805903d.css",
       "static/chunks/node_modules_next_7c89e613._.js",
@@ -20,7 +48,7 @@
       "static/chunks/node_modules_next_7c89e613._.js",
       "static/chunks/src_components_Header_tsx_69d15ee6._.js",
       "static/chunks/src_app_layout_tsx_c0237562._.js",
-      "static/chunks/src_components_4f95dc1e._.js",
+      "static/chunks/src_c45f3be7._.js",
       "static/chunks/src_app_feriados_page_tsx_dca8d8e2._.js",
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
       "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
@@ -60,11 +88,13 @@
       "static/chunks/_e69f0d32._.js",
       "static/chunks/_93808211._.js"
     ],
-    "/simuladores/page": [
+    "/page": [
       "static/chunks/src_app_globals_b805903d.css",
       "static/chunks/node_modules_next_7c89e613._.js",
       "static/chunks/src_components_Header_tsx_69d15ee6._.js",
       "static/chunks/src_app_layout_tsx_c0237562._.js",
+      "static/chunks/src_components_AdSlot_tsx_8aedb3b2._.js",
+      "static/chunks/src_app_page_tsx_dca8d8e2._.js",
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
       "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
       "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",
@@ -73,13 +103,41 @@
       "static/chunks/_e69f0d32._.js",
       "static/chunks/_93808211._.js"
     ],
-    "/simuladores/salario-liquido/page": [
+    "/simuladores/credito-habitacao/page": [
       "static/chunks/src_app_globals_b805903d.css",
       "static/chunks/node_modules_next_7c89e613._.js",
       "static/chunks/src_components_Header_tsx_69d15ee6._.js",
       "static/chunks/src_app_layout_tsx_c0237562._.js",
-      "static/chunks/src_2e9b43e3._.js",
-      "static/chunks/src_app_simuladores_salario-liquido_page_tsx_dca8d8e2._.js",
+      "static/chunks/src_13a4c53c._.js",
+      "static/chunks/src_app_simuladores_credito-habitacao_page_tsx_dca8d8e2._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
+      "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
+      "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",
+      "static/chunks/node_modules_next_dist_2ecbf5fa._.js",
+      "static/chunks/node_modules_@swc_helpers_cjs_00636ac3._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_93808211._.js"
+    ],
+    "/simuladores/juros-compostos/page": [
+      "static/chunks/src_app_globals_b805903d.css",
+      "static/chunks/node_modules_next_7c89e613._.js",
+      "static/chunks/src_components_Header_tsx_69d15ee6._.js",
+      "static/chunks/src_app_layout_tsx_c0237562._.js",
+      "static/chunks/src_47421b25._.js",
+      "static/chunks/src_app_simuladores_juros-compostos_page_tsx_dca8d8e2._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
+      "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
+      "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",
+      "static/chunks/node_modules_next_dist_2ecbf5fa._.js",
+      "static/chunks/node_modules_@swc_helpers_cjs_00636ac3._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_93808211._.js"
+    ],
+    "/simuladores/page": [
+      "static/chunks/src_app_globals_b805903d.css",
+      "static/chunks/node_modules_next_7c89e613._.js",
+      "static/chunks/src_components_Header_tsx_69d15ee6._.js",
+      "static/chunks/src_app_layout_tsx_c0237562._.js",
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
       "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
       "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",

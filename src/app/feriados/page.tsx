@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQ from "@/components/FAQ";
 import AdSlot from "@/components/AdSlot";
+import FeriadosViewer from "./FeriadosViewer";
 
 export const metadata: Metadata = {
-  title: "Feriados Nacionais Portugal 2025 e 2026",
+  title: "Feriados Nacionais Portugal 2025, 2026 e 2027",
   description:
-    "Lista completa dos feriados nacionais de Portugal para 2025 e 2026. Inclui feriados obrigatórios e tolerâncias de ponto.",
+    "Lista completa dos feriados nacionais de Portugal para 2025, 2026 e 2027. Inclui feriados obrigatórios e tolerâncias de ponto.",
   alternates: { canonical: "/feriados" },
 };
 
@@ -43,6 +44,22 @@ const feriados = {
     { data: "2026-12-08", nome: "Imaculada Conceição", dia: "Terça-feira" },
     { data: "2026-12-25", nome: "Natal", dia: "Sexta-feira" },
   ],
+  2027: [
+    { data: "2027-01-01", nome: "Ano Novo", dia: "Sexta-feira" },
+    { data: "2027-02-09", nome: "Carnaval", dia: "Terça-feira", facultativo: true },
+    { data: "2027-03-26", nome: "Sexta-Feira Santa", dia: "Sexta-feira" },
+    { data: "2027-03-28", nome: "Domingo de Páscoa", dia: "Domingo" },
+    { data: "2027-04-25", nome: "Dia da Liberdade", dia: "Domingo" },
+    { data: "2027-05-01", nome: "Dia do Trabalhador", dia: "Sábado" },
+    { data: "2027-05-27", nome: "Corpo de Deus", dia: "Quinta-feira" },
+    { data: "2027-06-10", nome: "Dia de Portugal", dia: "Quinta-feira" },
+    { data: "2027-08-15", nome: "Assunção de Nossa Senhora", dia: "Domingo" },
+    { data: "2027-10-05", nome: "Implantação da República", dia: "Terça-feira" },
+    { data: "2027-11-01", nome: "Dia de Todos os Santos", dia: "Segunda-feira" },
+    { data: "2027-12-01", nome: "Restauração da Independência", dia: "Quarta-feira" },
+    { data: "2027-12-08", nome: "Imaculada Conceição", dia: "Quarta-feira" },
+    { data: "2027-12-25", nome: "Natal", dia: "Sábado" },
+  ],
 };
 
 const faqs = [
@@ -60,16 +77,11 @@ const faqs = [
   },
 ];
 
-function formatDate(dateStr: string): string {
-  const d = new Date(dateStr);
-  return d.toLocaleDateString("pt-PT", { day: "numeric", month: "long" });
-}
-
 const schema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Feriados Nacionais de Portugal 2025",
-  itemListElement: feriados[2025].map((f, i) => ({
+  name: "Feriados Nacionais de Portugal 2026",
+  itemListElement: feriados[2026].map((f, i) => ({
     "@type": "ListItem",
     position: i + 1,
     name: f.nome,
@@ -86,49 +98,16 @@ export default function FeriadosPage() {
 
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Feriados Nacionais de Portugal</h1>
-          <p className="text-gray-500">Lista completa dos feriados obrigatórios para 2025 e 2026.</p>
+          <p className="text-gray-500">Lista completa dos feriados obrigatórios por ano.</p>
         </div>
 
         <AdSlot format="horizontal" className="mb-8" />
 
-        {([2025, 2026] as const).map((year) => (
-          <section key={year} className="mb-10">
-            <h2 className="section-title mb-4">Feriados {year}</h2>
-            <div className="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-card">
-              <table className="w-full text-sm">
-                <thead className="bg-gray-50 border-b border-gray-100">
-                  <tr>
-                    <th className="px-5 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wide">Data</th>
-                    <th className="px-5 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wide">Dia</th>
-                    <th className="px-5 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wide">Feriado</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-50">
-                  {feriados[year].map((f) => {
-                    const isWeekend = f.dia === "Sábado" || f.dia === "Domingo";
-                    return (
-                      <tr key={f.data} className={`hover:bg-gray-50 ${isWeekend ? "opacity-60" : ""}`}>
-                        <td className="px-5 py-3 font-medium text-gray-900">{formatDate(f.data)}</td>
-                        <td className="px-5 py-3 text-gray-500">{f.dia}</td>
-                        <td className="px-5 py-3 text-gray-700">
-                          {f.nome}
-                          {f.facultativo && (
-                            <span className="ml-2 badge bg-yellow-50 text-yellow-700">Facultativo</span>
-                          )}
-                          {isWeekend && (
-                            <span className="ml-2 badge bg-gray-100 text-gray-500">Fim de semana</span>
-                          )}
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            </div>
-          </section>
-        ))}
+        <FeriadosViewer feriados={feriados} />
 
-        <FAQ items={faqs} />
+        <div className="mt-10">
+          <FAQ items={faqs} />
+        </div>
       </div>
     </>
   );

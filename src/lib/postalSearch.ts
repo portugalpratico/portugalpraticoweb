@@ -59,7 +59,9 @@ function loadOnce(): Row[] {
 export function searchPostalCodes(query: string, limit = 50): CPResult[] {
   const data = loadOnce();
 
-  const q = normalize(query);
+  // Normalise 7-digit CP without hyphen → insert hyphen (e.g. 2735660 → 2735-660)
+  const cleaned = query.trim().replace(/^(\d{4})[-\s]?(\d{3})$/, "$1-$2");
+  const q = normalize(cleaned);
   if (q.length < 2) return [];
 
   const queryTokens = q.split(/\s+/).filter(Boolean);
