@@ -1,8 +1,9 @@
 {
+  "/api/codigo-postal/route": "app/api/codigo-postal/route.js",
+  "/codigo-postal/page": "app/codigo-postal/page.js",
   "/feriados/page": "app/feriados/page.js",
   "/localidades/page": "app/localidades/page.js",
   "/nif/page": "app/nif/page.js",
-  "/page": "app/page.js",
-  "/simuladores/iva/page": "app/simuladores/iva/page.js",
-  "/simuladores/page": "app/simuladores/page.js"
+  "/simuladores/page": "app/simuladores/page.js",
+  "/simuladores/salario-liquido/page": "app/simuladores/salario-liquido/page.js"
 }

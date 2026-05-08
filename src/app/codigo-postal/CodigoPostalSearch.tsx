@@ -4,9 +4,11 @@ import { useState } from "react";
 
 interface CPResult {
   codigoCompleto: string;
-  rua?: string;
+  morada: string;
+  localidadeEspecifica: string;
   localidade: string;
-  concelho: string;
+  conselho: string;
+  freguesia: string;
   distrito: string;
 }
 
@@ -15,20 +17,24 @@ export default function CodigoPostalSearch() {
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState<CPResult[] | null>(null);
   const [error, setError] = useState("");
+  const [ms, setMs] = useState<number | null>(null);
 
-  const search = async () => {
-    if (!query.trim()) return;
+  const search = async (q = query) => {
+    const trimmed = q.trim();
+    if (!trimmed) return;
     setLoading(true);
     setError("");
     setResults(null);
+    setMs(null);
 
     try {
-      const res = await fetch(`/api/codigo-postal?q=${encodeURIComponent(query.trim())}`);
+      const res = await fetch(`/api/codigo-postal?q=${encodeURIComponent(trimmed)}`);
       const data = await res.json();
-      if (data.results) {
-        setResults(data.results);
+      if (!res.ok) {
+        setError(data.error ?? "Erro ao pesquisar.");
       } else {
-        setError("Nenhum resultado encontrado.");
+        setResults(data.results ?? []);
+        setMs(data.ms ?? null);
       }
     } catch {
       setError("Erro ao pesquisar. Por favor tente novamente.");
@@ -52,7 +58,7 @@ export default function CodigoPostalSearch() {
             placeholder="Ex: Rua Augusta Lisboa, 1000-001, Porto..."
             className="input-field"
           />
-          <button onClick={search} disabled={loading} className="btn-primary shrink-0">
+          <button onClick={() => search()} disabled={loading} className="btn-primary shrink-0">
             {loading ? (
               <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
@@ -82,17 +88,25 @@ export default function CodigoPostalSearch() {
 
       {results && results.length > 0 && (
         <div className="bg-white rounded-2xl border border-gray-100 shadow-card overflow-hidden animate-fade-in">
-          <div className="px-5 py-3 bg-gray-50 border-b border-gray-100 text-xs text-gray-500 font-medium">
-            {results.length} resultado{results.length !== 1 ? "s" : ""} encontrado{results.length !== 1 ? "s" : ""}
+          <div className="px-5 py-3 bg-gray-50 border-b border-gray-100 flex items-center justify-between">
+            <span className="text-xs text-gray-500 font-medium">
+              {results.length === 50 ? "50+" : results.length}{" "}
+              resultado{results.length !== 1 ? "s" : ""} encontrado{results.length !== 1 ? "s" : ""}
+            </span>
+            {ms !== null && <span className="text-xs text-gray-400">{ms}ms</span>}
           </div>
           <div className="divide-y divide-gray-50">
-            {results.slice(0, 20).map((r) => (
-              <div key={r.codigoCompleto} className="px-5 py-3.5 hover:bg-gray-50 flex items-start justify-between gap-4">
-                <div>
+            {results.map((r, i) => (
+              <div key={`${r.codigoCompleto}-${i}`} className="px-5 py-3.5 hover:bg-gray-50 flex items-start justify-between gap-4">
+                <div className="min-w-0">
                   <span className="font-mono font-bold text-[#046A38] text-base">{r.codigoCompleto}</span>
-                  {r.rua && <p className="text-sm text-gray-700 mt-0.5">{r.rua}</p>}
+                  {(r.morada || r.localidadeEspecifica) && (
+                    <p className="text-sm text-gray-700 mt-0.5 truncate">
+                      {[r.morada, r.localidadeEspecifica].filter(Boolean).join(", ")}
+                    </p>
+                  )}
                   <p className="text-xs text-gray-500 mt-0.5">
-                    {r.localidade} · {r.concelho} · {r.distrito}
+                    {[r.localidade, r.freguesia, r.conselho, r.distrito].filter(Boolean).join(" · ")}
                   </p>
                 </div>
                 <button
@@ -108,7 +122,7 @@ export default function CodigoPostalSearch() {
       )}
 
       <div className="text-xs text-gray-400 text-center">
-        Base de dados CTT. Para importar dados reais, use o ficheiro oficial dos CTT.
+        Base de dados CTT · {(324180).toLocaleString("pt-PT")} códigos postais
       </div>
     </div>
   );
