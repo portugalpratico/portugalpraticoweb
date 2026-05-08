@@ -15,8 +15,8 @@ export default function NifIbanPage() {
       <Breadcrumbs crumbs={[{ label: "Início", href: "/" }, { label: "NIF & IBAN" }]} />
 
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Validar NIF e IBAN</h1>
-        <p className="text-gray-500">Verifique a validade de um NIF português ou de um IBAN nacional e internacional.</p>
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Validar NIF e IBAN</h1>
+        <p className="text-gray-500 dark:text-gray-400">Verifique a validade de um NIF português ou de um IBAN nacional e internacional.</p>
       </div>
 
       <NifIbanTabs />

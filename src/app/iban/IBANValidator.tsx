@@ -69,7 +69,7 @@ export default function IBANValidator() {
 
   return (
     <div className="card mb-6">
-      <label className="block text-sm font-medium text-gray-700 mb-2">IBAN a validar</label>
+      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">IBAN a validar</label>
       <div className="flex gap-3">
         <input
           type="text"
@@ -86,8 +86,8 @@ export default function IBANValidator() {
         <div
           className={`mt-4 flex items-start gap-3 p-4 rounded-xl border animate-fade-in ${
             result.valid
-              ? "bg-green-50 border-green-100 text-green-800"
-              : "bg-red-50 border-red-100 text-red-800"
+              ? "bg-green-50 dark:bg-green-900/20 border-green-100 dark:border-green-800 text-green-800 dark:text-green-300"
+              : "bg-red-50 dark:bg-red-900/20 border-red-100 dark:border-red-800 text-red-800 dark:text-red-300"
           }`}
         >
           <span className={result.valid ? "text-green-600" : "text-red-500"}>

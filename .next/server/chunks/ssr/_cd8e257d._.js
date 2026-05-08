@@ -25,9 +25,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function ToolCard({ title, description, href, icon, badge, badgeColor = "green" }) {
     const badgeClasses = {
-        green: "bg-green-50 text-[#046A38]",
-        red: "bg-red-50 text-[#DA291C]",
-        gray: "bg-gray-100 text-gray-600"
+        green: "bg-green-50 dark:bg-green-900/30 text-[#046A38] dark:text-green-400",
+        red: "bg-red-50 dark:bg-red-900/30 text-[#DA291C] dark:text-red-400",
+        gray: "bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300"
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
         href: href,
@@ -36,7 +36,7 @@ function ToolCard({ title, description, href, icon, badge, badgeColor = "green" 
             className: "flex items-start gap-4",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex-shrink-0 w-10 h-10 bg-green-50 rounded-xl flex items-center justify-center text-[#046A38] group-hover:bg-[#046A38] group-hover:text-white transition-colors",
+                    className: "flex-shrink-0 w-10 h-10 bg-green-50 dark:bg-green-900/30 rounded-xl flex items-center justify-center text-[#046A38] dark:text-green-400 group-hover:bg-[#046A38] group-hover:text-white transition-colors",
                     children: icon
                 }, void 0, false, {
                     fileName: "[project]/src/components/ToolCard.tsx",
@@ -50,7 +50,7 @@ function ToolCard({ title, description, href, icon, badge, badgeColor = "green" 
                             className: "flex items-center gap-2 mb-1",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    className: "font-semibold text-gray-900 text-sm group-hover:text-[#046A38] transition-colors",
+                                    className: "font-semibold text-gray-900 dark:text-gray-100 text-sm group-hover:text-[#046A38] dark:group-hover:text-green-400 transition-colors",
                                     children: title
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ToolCard.tsx",
@@ -62,8 +62,8 @@ function ToolCard({ title, description, href, icon, badge, badgeColor = "green" 
                                     children: badge
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ToolCard.tsx",
-                                    lineNumber: 29,
-                                    columnNumber: 15
+                                    lineNumber: 28,
+                                    columnNumber: 23
                                 }, this)
                             ]
                         }, void 0, true, {
@@ -72,11 +72,11 @@ function ToolCard({ title, description, href, icon, badge, badgeColor = "green" 
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-xs text-gray-500 leading-relaxed",
+                            className: "text-xs text-gray-500 dark:text-gray-400 leading-relaxed",
                             children: description
                         }, void 0, false, {
                             fileName: "[project]/src/components/ToolCard.tsx",
-                            lineNumber: 32,
+                            lineNumber: 30,
                             columnNumber: 11
                         }, this)
                     ]
@@ -86,7 +86,7 @@ function ToolCard({ title, description, href, icon, badge, badgeColor = "green" 
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                    className: "w-4 h-4 text-gray-300 group-hover:text-[#046A38] transition-colors shrink-0 mt-0.5",
+                    className: "w-4 h-4 text-gray-300 dark:text-gray-600 group-hover:text-[#046A38] dark:group-hover:text-green-400 transition-colors shrink-0 mt-0.5",
                     fill: "none",
                     stroke: "currentColor",
                     viewBox: "0 0 24 24",
@@ -97,12 +97,12 @@ function ToolCard({ title, description, href, icon, badge, badgeColor = "green" 
                         d: "M9 5l7 7-7 7"
                     }, void 0, false, {
                         fileName: "[project]/src/components/ToolCard.tsx",
-                        lineNumber: 35,
+                        lineNumber: 33,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/ToolCard.tsx",
-                    lineNumber: 34,
+                    lineNumber: 32,
                     columnNumber: 9
                 }, this)
             ]
@@ -592,7 +592,7 @@ function HomePage() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "bg-white border-b border-gray-100",
+                className: "bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -605,7 +605,7 @@ function HomePage() {
                                     alt: "Portugal Prático",
                                     width: 480,
                                     height: 160,
-                                    className: "h-28 sm:h-36 lg:h-44 w-auto drop-shadow-sm",
+                                    className: "h-28 sm:h-36 lg:h-44 w-auto drop-shadow-sm dark:bg-gray-300 dark:rounded-[15px]",
                                     priority: true
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.tsx",
@@ -618,7 +618,7 @@ function HomePage() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-base sm:text-lg text-gray-500 mb-8 leading-relaxed max-w-xl mx-auto",
+                                className: "text-base sm:text-lg text-gray-500 dark:text-gray-400 mb-8 leading-relaxed max-w-xl mx-auto",
                                 children: "Pesquise códigos postais, valide NIF e IBAN, simule o seu salário e muito mais — grátis e sem registo."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.tsx",
@@ -679,7 +679,7 @@ function HomePage() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-xs text-gray-400 mt-3",
+                                className: "text-xs text-gray-400 dark:text-gray-500 mt-3",
                                 children: 'Ex: "1000-001", "Rua Augusta Lisboa", "Porto"'
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.tsx",
@@ -728,7 +728,7 @@ function HomePage() {
                                 className: "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3",
                                 children: categories.map((cat)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                         href: cat.href,
-                                        className: "flex flex-col items-center gap-2.5 p-4 bg-white rounded-2xl border border-gray-100 shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200 text-center group",
+                                        className: "flex flex-col items-center gap-2.5 p-4 bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200 text-center group",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: `w-11 h-11 rounded-xl flex items-center justify-center ${cat.color}`,
@@ -739,7 +739,7 @@ function HomePage() {
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-sm font-medium text-gray-700 group-hover:text-gray-900",
+                                                className: "text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-gray-100",
                                                 children: cat.label
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/page.tsx",
@@ -810,10 +810,10 @@ function HomePage() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                        className: "bg-white rounded-2xl border border-gray-100 p-8 mb-10",
+                        className: "bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 p-8 mb-10",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-xl font-bold text-gray-900 mb-4",
+                                className: "text-xl font-bold text-gray-900 dark:text-gray-100 mb-4",
                                 children: "Portugal Prático — O Seu Portal de Referência"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.tsx",
@@ -821,7 +821,7 @@ function HomePage() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "prose prose-sm text-gray-600 max-w-none space-y-3",
+                                className: "prose prose-sm text-gray-600 dark:text-gray-400 max-w-none space-y-3",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: [
@@ -951,7 +951,7 @@ function HomePage() {
                                     "Madeira"
                                 ].map((d)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                         href: `/localidades/${d.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/\s+/g, "-")}`,
-                                        className: "px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-[#046A38] hover:text-[#046A38] transition-colors",
+                                        className: "px-3 py-1.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:border-[#046A38] hover:text-[#046A38] dark:hover:border-green-500 dark:hover:text-green-400 transition-colors",
                                         children: d
                                     }, d, false, {
                                         fileName: "[project]/src/app/page.tsx",

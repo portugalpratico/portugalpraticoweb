@@ -46,8 +46,8 @@ export default function CodigoPostalPage({
       <Breadcrumbs crumbs={[{ label: "Início", href: "/" }, { label: "Código Postal" }]} />
 
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Pesquisa de Código Postal</h1>
-        <p className="text-gray-500">Encontre qualquer código postal português por rua, localidade ou código.</p>
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Pesquisa de Código Postal</h1>
+        <p className="text-gray-500 dark:text-gray-400">Encontre qualquer código postal português por rua, localidade ou código.</p>
       </div>
 
       <CodigoPostalSearch />
@@ -56,13 +56,13 @@ export default function CodigoPostalPage({
 
       {/* Popular cities */}
       <section className="mb-8">
-        <h2 className="font-semibold text-gray-900 mb-3">Pesquisas populares</h2>
+        <h2 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">Pesquisas populares</h2>
         <div className="flex flex-wrap gap-2">
           {popularCities.map((city) => (
             <Link
               key={city}
               href={`/codigo-postal/${city.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/\s+/g, "-")}`}
-              className="px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-[#046A38] hover:text-[#046A38] transition-colors"
+              className="px-3 py-1.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:border-[#046A38] hover:text-[#046A38] dark:hover:border-green-500 dark:hover:text-green-400 transition-colors"
             >
               Código postal {city}
             </Link>

@@ -46,8 +46,8 @@ export default function SalarioLiquidoPage() {
       />
 
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Simulador Salário Líquido 2025</h1>
-        <p className="text-gray-500">Calcule o salário líquido mensal a partir do seu salário bruto.</p>
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Simulador Salário Líquido 2025</h1>
+        <p className="text-gray-500 dark:text-gray-400">Calcule o salário líquido mensal a partir do seu salário bruto.</p>
       </div>
 
       <SalarioSimulator />

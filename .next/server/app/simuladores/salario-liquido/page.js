@@ -2,7 +2,7 @@ const CHUNK_PUBLIC_PATH = "server/app/simuladores/salario-liquido/page.js";
 const runtime = require("../../../chunks/ssr/[turbopack]_runtime.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_a17f26a9._.js");
 runtime.loadChunk("server/chunks/ssr/[root-of-the-server]__50a7c09c._.js");
-runtime.loadChunk("server/chunks/ssr/_c21e450c._.js");
+runtime.loadChunk("server/chunks/ssr/_81f23c9e._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_client_components_c2f0b79c._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_client_components_forbidden-error_ea7ea172.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_client_components_unauthorized-error_c8949b27.js");

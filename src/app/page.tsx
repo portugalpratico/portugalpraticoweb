@@ -80,7 +80,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-white border-b border-gray-100">
+      <section className="bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
           <div className="text-center max-w-3xl mx-auto">
             <div className="flex justify-center mb-8">
@@ -89,11 +89,11 @@ export default function HomePage() {
                 alt="Portugal Prático"
                 width={480}
                 height={160}
-                className="h-28 sm:h-36 lg:h-44 w-auto drop-shadow-sm"
+                className="h-28 sm:h-36 lg:h-44 w-auto drop-shadow-sm dark:bg-gray-300 dark:rounded-[15px]"
                 priority
               />
             </div>
-            <p className="text-base sm:text-lg text-gray-500 mb-8 leading-relaxed max-w-xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-500 dark:text-gray-400 mb-8 leading-relaxed max-w-xl mx-auto">
               Pesquise códigos postais, valide NIF e IBAN, simule o seu salário e muito mais — grátis e sem registo.
             </p>
 
@@ -114,7 +114,7 @@ export default function HomePage() {
               </button>
             </form>
 
-            <p className="text-xs text-gray-400 mt-3">
+            <p className="text-xs text-gray-400 dark:text-gray-500 mt-3">
               Ex: &quot;1000-001&quot;, &quot;Rua Augusta Lisboa&quot;, &quot;Porto&quot;
             </p>
           </div>
@@ -133,12 +133,12 @@ export default function HomePage() {
               <Link
                 key={cat.href}
                 href={cat.href}
-                className="flex flex-col items-center gap-2.5 p-4 bg-white rounded-2xl border border-gray-100 shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200 text-center group"
+                className="flex flex-col items-center gap-2.5 p-4 bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200 text-center group"
               >
                 <div className={`w-11 h-11 rounded-xl flex items-center justify-center ${cat.color}`}>
                   {cat.icon}
                 </div>
-                <span className="text-sm font-medium text-gray-700 group-hover:text-gray-900">{cat.label}</span>
+                <span className="text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-gray-100">{cat.label}</span>
               </Link>
             ))}
           </div>
@@ -160,9 +160,9 @@ export default function HomePage() {
         <AdSlot format="horizontal" className="mb-12" />
 
         {/* SEO text block */}
-        <section className="bg-white rounded-2xl border border-gray-100 p-8 mb-10">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">Portugal Prático — O Seu Portal de Referência</h2>
-          <div className="prose prose-sm text-gray-600 max-w-none space-y-3">
+        <section className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 p-8 mb-10">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4">Portugal Prático — O Seu Portal de Referência</h2>
+          <div className="prose prose-sm text-gray-600 dark:text-gray-400 max-w-none space-y-3">
             <p>
               O <strong>Portugal Prático</strong> é o portal de ferramentas úteis para o dia a dia em Portugal.
               Disponibilizamos acesso rápido a informação essencial: desde a pesquisa de <strong>códigos postais</strong> de
@@ -189,7 +189,7 @@ export default function HomePage() {
               <Link
                 key={d}
                 href={`/localidades/${d.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/\s+/g, "-")}`}
-                className="px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-[#046A38] hover:text-[#046A38] transition-colors"
+                className="px-3 py-1.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:border-[#046A38] hover:text-[#046A38] dark:hover:border-green-500 dark:hover:text-green-400 transition-colors"
               >
                 {d}
               </Link>

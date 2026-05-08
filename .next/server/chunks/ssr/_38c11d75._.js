@@ -50,12 +50,12 @@ function Breadcrumbs({ crumbs }) {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
                 "aria-label": "Breadcrumb",
-                className: "flex items-center gap-1.5 text-sm text-gray-500 mb-6",
+                className: "flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400 mb-6",
                 children: crumbs.map((c, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "flex items-center gap-1.5",
                         children: [
                             i > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-gray-300",
+                                className: "text-gray-300 dark:text-gray-600",
                                 children: "/"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Breadcrumbs.tsx",
@@ -64,14 +64,14 @@ function Breadcrumbs({ crumbs }) {
                             }, this),
                             c.href && i < crumbs.length - 1 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                 href: c.href,
-                                className: "hover:text-[#046A38] transition-colors",
+                                className: "hover:text-[#046A38] dark:hover:text-green-400 transition-colors",
                                 children: c.label
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Breadcrumbs.tsx",
                                 lineNumber: 28,
                                 columnNumber: 15
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-gray-700 font-medium",
+                                className: "text-gray-700 dark:text-gray-200 font-medium",
                                 children: c.label
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Breadcrumbs.tsx",
@@ -4179,7 +4179,7 @@ function LocalidadesPage() {
                 className: "mb-8",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "text-3xl font-bold text-gray-900 mb-2",
+                        className: "text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2",
                         children: "Localidades de Portugal"
                     }, void 0, false, {
                         fileName: "[project]/src/app/localidades/page.tsx",
@@ -4187,7 +4187,7 @@ function LocalidadesPage() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-gray-500",
+                        className: "text-gray-500 dark:text-gray-400",
                         children: "Explore todos os distritos, concelhos e freguesias de Portugal continental e ilhas."
                     }, void 0, false, {
                         fileName: "[project]/src/app/localidades/page.tsx",
@@ -4220,10 +4220,10 @@ function LocalidadesPage() {
                         value: `${(totalPop / 1_000_000).toFixed(1)}M`
                     }
                 ].map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "bg-white border border-gray-100 rounded-2xl p-4 text-center shadow-card",
+                        className: "bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl p-4 text-center shadow-card",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-2xl font-bold text-[#046A38]",
+                                className: "text-2xl font-bold text-[#046A38] dark:text-green-400",
                                 children: s.value
                             }, void 0, false, {
                                 fileName: "[project]/src/app/localidades/page.tsx",
@@ -4231,7 +4231,7 @@ function LocalidadesPage() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-xs text-gray-500 mt-0.5",
+                                className: "text-xs text-gray-500 dark:text-gray-400 mt-0.5",
                                 children: s.label
                             }, void 0, false, {
                                 fileName: "[project]/src/app/localidades/page.tsx",
@@ -4263,13 +4263,13 @@ function LocalidadesPage() {
                     const totalFreg = d.concelhos.reduce((s, c)=>s + c.freguesias, 0);
                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                         href: `/localidades/${d.slug}`,
-                        className: "group bg-white rounded-2xl border border-gray-100 shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200 p-5",
+                        className: "group bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200 p-5",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex items-start justify-between mb-3",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "font-bold text-gray-900 group-hover:text-[#046A38] transition-colors text-base",
+                                        className: "font-bold text-gray-900 dark:text-gray-100 group-hover:text-[#046A38] dark:group-hover:text-green-400 transition-colors text-base",
                                         children: d.nome
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/localidades/page.tsx",
@@ -4277,7 +4277,7 @@ function LocalidadesPage() {
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                        className: "w-4 h-4 text-gray-300 group-hover:text-[#046A38] transition-colors shrink-0",
+                                        className: "w-4 h-4 text-gray-300 dark:text-gray-600 group-hover:text-[#046A38] dark:group-hover:text-green-400 transition-colors shrink-0",
                                         fill: "none",
                                         stroke: "currentColor",
                                         viewBox: "0 0 24 24",
@@ -4306,10 +4306,10 @@ function LocalidadesPage() {
                                 className: "grid grid-cols-3 gap-2 text-center",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "bg-gray-50 rounded-lg py-1.5",
+                                        className: "bg-gray-50 dark:bg-gray-700 rounded-lg py-1.5",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "font-semibold text-gray-800 text-sm",
+                                                className: "font-semibold text-gray-800 dark:text-gray-200 text-sm",
                                                 children: d.concelhos.length
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/localidades/page.tsx",
@@ -4317,7 +4317,7 @@ function LocalidadesPage() {
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-xs text-gray-400",
+                                                className: "text-xs text-gray-400 dark:text-gray-500",
                                                 children: "concelhos"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/localidades/page.tsx",
@@ -4331,10 +4331,10 @@ function LocalidadesPage() {
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "bg-gray-50 rounded-lg py-1.5",
+                                        className: "bg-gray-50 dark:bg-gray-700 rounded-lg py-1.5",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "font-semibold text-gray-800 text-sm",
+                                                className: "font-semibold text-gray-800 dark:text-gray-200 text-sm",
                                                 children: totalFreg
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/localidades/page.tsx",
@@ -4342,7 +4342,7 @@ function LocalidadesPage() {
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-xs text-gray-400",
+                                                className: "text-xs text-gray-400 dark:text-gray-500",
                                                 children: "freg."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/localidades/page.tsx",
@@ -4356,10 +4356,10 @@ function LocalidadesPage() {
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "bg-gray-50 rounded-lg py-1.5",
+                                        className: "bg-gray-50 dark:bg-gray-700 rounded-lg py-1.5",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "font-semibold text-gray-800 text-sm",
+                                                className: "font-semibold text-gray-800 dark:text-gray-200 text-sm",
                                                 children: d.populacao >= 1_000_000 ? `${(d.populacao / 1_000_000).toFixed(1)}M` : `${Math.round(d.populacao / 1000)}k`
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/localidades/page.tsx",
@@ -4367,7 +4367,7 @@ function LocalidadesPage() {
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-xs text-gray-400",
+                                                className: "text-xs text-gray-400 dark:text-gray-500",
                                                 children: "hab."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/localidades/page.tsx",
@@ -4387,7 +4387,7 @@ function LocalidadesPage() {
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-xs text-gray-400 mt-2",
+                                className: "text-xs text-gray-400 dark:text-gray-500 mt-2",
                                 children: [
                                     "Capital: ",
                                     d.capital
@@ -4413,7 +4413,7 @@ function LocalidadesPage() {
                 className: "mt-10 card",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-lg font-bold text-gray-900 mb-3",
+                        className: "text-lg font-bold text-gray-900 dark:text-gray-100 mb-3",
                         children: "Sobre as Localidades de Portugal"
                     }, void 0, false, {
                         fileName: "[project]/src/app/localidades/page.tsx",
@@ -4421,7 +4421,7 @@ function LocalidadesPage() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "text-sm text-gray-600 space-y-2 leading-relaxed",
+                        className: "text-sm text-gray-600 dark:text-gray-400 space-y-2 leading-relaxed",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: [

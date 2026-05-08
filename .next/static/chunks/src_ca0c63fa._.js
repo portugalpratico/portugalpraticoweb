@@ -392,7 +392,7 @@ function NIFValidator() {
         className: "card mb-6",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                className: "block text-sm font-medium text-gray-700 mb-2",
+                className: "block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2",
                 children: "NIF a validar"
             }, void 0, false, {
                 fileName: "[project]/src/app/nif/NIFValidator.tsx",
@@ -434,7 +434,7 @@ function NIFValidator() {
                 columnNumber: 7
             }, this),
             result && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: `mt-4 flex items-start gap-3 p-4 rounded-xl border animate-fade-in ${result.valid ? "bg-green-50 border-green-100 text-green-800" : "bg-red-50 border-red-100 text-red-800"}`,
+                className: `mt-4 flex items-start gap-3 p-4 rounded-xl border animate-fade-in ${result.valid ? "bg-green-50 dark:bg-green-900/20 border-green-100 dark:border-green-800 text-green-800 dark:text-green-300" : "bg-red-50 dark:bg-red-900/20 border-red-100 dark:border-red-800 text-red-800 dark:text-red-300"}`,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: result.valid ? "text-green-600" : "text-red-500",
@@ -618,7 +618,7 @@ function IBANValidator() {
         className: "card mb-6",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                className: "block text-sm font-medium text-gray-700 mb-2",
+                className: "block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2",
                 children: "IBAN a validar"
             }, void 0, false, {
                 fileName: "[project]/src/app/iban/IBANValidator.tsx",
@@ -659,7 +659,7 @@ function IBANValidator() {
                 columnNumber: 7
             }, this),
             result && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: `mt-4 flex items-start gap-3 p-4 rounded-xl border animate-fade-in ${result.valid ? "bg-green-50 border-green-100 text-green-800" : "bg-red-50 border-red-100 text-red-800"}`,
+                className: `mt-4 flex items-start gap-3 p-4 rounded-xl border animate-fade-in ${result.valid ? "bg-green-50 dark:bg-green-900/20 border-green-100 dark:border-green-800 text-green-800 dark:text-green-300" : "bg-red-50 dark:bg-red-900/20 border-red-100 dark:border-red-800 text-red-800 dark:text-red-300"}`,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: result.valid ? "text-green-600" : "text-red-500",
@@ -796,14 +796,14 @@ function FAQ({ items, title = "Perguntas Frequentes" }) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "space-y-2",
                         children: items.map((item, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-white rounded-xl border border-gray-100 overflow-hidden",
+                                className: "bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>setOpen(open === i ? null : i),
-                                        className: "w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors",
+                                        className: "w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "font-medium text-gray-900 text-sm",
+                                                className: "font-medium text-gray-900 dark:text-gray-100 text-sm",
                                                 children: item.question
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/FAQ.tsx",
@@ -811,7 +811,7 @@ function FAQ({ items, title = "Perguntas Frequentes" }) {
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                className: `w-4 h-4 text-gray-400 transition-transform ${open === i ? "rotate-180" : ""}`,
+                                                className: `w-4 h-4 text-gray-400 dark:text-gray-500 transition-transform shrink-0 ml-3 ${open === i ? "rotate-180" : ""}`,
                                                 fill: "none",
                                                 stroke: "currentColor",
                                                 viewBox: "0 0 24 24",
@@ -837,7 +837,7 @@ function FAQ({ items, title = "Perguntas Frequentes" }) {
                                         columnNumber: 15
                                     }, this),
                                     open === i && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "px-5 pb-4 text-sm text-gray-600 leading-relaxed border-t border-gray-50",
+                                        className: "px-5 pb-4 text-sm text-gray-600 dark:text-gray-400 leading-relaxed border-t border-gray-50 dark:border-gray-700",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "pt-3",
                                             children: item.answer
@@ -982,11 +982,11 @@ function NifIbanTabs() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex bg-gray-100 rounded-xl p-1 gap-1 mb-6",
+                className: "flex bg-gray-100 dark:bg-gray-700 rounded-xl p-1 gap-1 mb-6",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>setTab("nif"),
-                        className: `flex-1 py-2.5 text-sm font-medium rounded-lg transition-colors ${tab === "nif" ? "bg-white text-gray-900 shadow-sm" : "text-gray-500 hover:text-gray-700"}`,
+                        className: `flex-1 py-2.5 text-sm font-medium rounded-lg transition-colors ${tab === "nif" ? "bg-white dark:bg-gray-600 text-gray-900 dark:text-gray-100 shadow-sm" : "text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"}`,
                         children: "Validar NIF"
                     }, void 0, false, {
                         fileName: "[project]/src/app/nif/NifIbanTabs.tsx",
@@ -995,7 +995,7 @@ function NifIbanTabs() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>setTab("iban"),
-                        className: `flex-1 py-2.5 text-sm font-medium rounded-lg transition-colors ${tab === "iban" ? "bg-white text-gray-900 shadow-sm" : "text-gray-500 hover:text-gray-700"}`,
+                        className: `flex-1 py-2.5 text-sm font-medium rounded-lg transition-colors ${tab === "iban" ? "bg-white dark:bg-gray-600 text-gray-900 dark:text-gray-100 shadow-sm" : "text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"}`,
                         children: "Validar IBAN"
                     }, void 0, false, {
                         fileName: "[project]/src/app/nif/NifIbanTabs.tsx",
@@ -1031,7 +1031,7 @@ function NifIbanTabs() {
                         className: "card mb-8",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "font-semibold text-gray-900 mb-3",
+                                className: "font-semibold text-gray-900 dark:text-gray-100 mb-3",
                                 children: "Estrutura do NIF Português"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/nif/NifIbanTabs.tsx",
@@ -1039,7 +1039,7 @@ function NifIbanTabs() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "space-y-2 text-sm text-gray-600",
+                                className: "space-y-2 text-sm text-gray-600 dark:text-gray-400",
                                 children: [
                                     [
                                         "Começa em 1, 2 ou 3",
@@ -1070,10 +1070,10 @@ function NifIbanTabs() {
                                         "Empresário em nome individual"
                                     ]
                                 ].map(([k, v], i, arr)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: `flex justify-between py-2 ${i < arr.length - 1 ? "border-b border-gray-50" : ""}`,
+                                        className: `flex justify-between py-2 ${i < arr.length - 1 ? "border-b border-gray-50 dark:border-gray-700" : ""}`,
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "font-medium",
+                                                className: "font-medium dark:text-gray-300",
                                                 children: k
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/nif/NifIbanTabs.tsx",
@@ -1118,7 +1118,7 @@ function NifIbanTabs() {
                         className: "card mb-8",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "font-semibold text-gray-900 mb-3",
+                                className: "font-semibold text-gray-900 dark:text-gray-100 mb-3",
                                 children: "Estrutura do IBAN Português"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/nif/NifIbanTabs.tsx",
@@ -1126,7 +1126,7 @@ function NifIbanTabs() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-gray-50 rounded-xl p-4 font-mono text-sm mb-4 tracking-widest text-center text-gray-700",
+                                className: "bg-gray-50 dark:bg-gray-700 rounded-xl p-4 font-mono text-sm mb-4 tracking-widest text-center text-gray-700 dark:text-gray-300",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "bg-blue-100 text-blue-700 px-1 rounded",
@@ -1179,7 +1179,7 @@ function NifIbanTabs() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "grid grid-cols-2 gap-3 text-xs text-gray-600",
+                                className: "grid grid-cols-2 gap-3 text-xs text-gray-600 dark:text-gray-400",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex gap-2",

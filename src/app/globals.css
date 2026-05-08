@@ -7,7 +7,7 @@
 :root {
   --green-portugal: #046A38;
   --red-portugal: #DA291C;
-  --bg: #ffffff;
+  --bg: #F9FAFB;
   --fg: #111827;
   --muted: #6B7280;
   --border: #E5E7EB;
@@ -19,9 +19,9 @@
   --bg: #0f172a;
   --fg: #f1f5f9;
   --muted: #94a3b8;
-  --border: #1e293b;
+  --border: #334155;
   --card: #1e293b;
-  --card-hover: #293548;
+  --card-hover: #263348;
 }
 
 * {
@@ -38,6 +38,7 @@ body {
   color: var(--fg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 @layer components {
@@ -46,23 +47,23 @@ body {
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-white hover:bg-gray-50 text-gray-700 font-medium rounded-xl border border-gray-200 transition-all duration-150 text-sm shadow-sm;
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 font-medium rounded-xl border border-gray-200 dark:border-gray-600 transition-all duration-150 text-sm shadow-sm;
   }
 
   .input-field {
-    @apply w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#046A38] focus:border-transparent transition-all duration-150 text-sm;
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#046A38] focus:border-transparent transition-all duration-150 text-sm;
   }
 
   .card {
-    @apply bg-white rounded-2xl border border-gray-100 shadow-card hover:shadow-card-hover transition-all duration-200 p-6;
+    @apply bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-card hover:shadow-card-hover transition-all duration-200 p-6;
   }
 
   .tool-card {
-    @apply bg-white rounded-2xl border border-gray-100 shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200 p-5 cursor-pointer;
+    @apply bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200 p-5 cursor-pointer;
   }
 
   .section-title {
-    @apply text-2xl font-bold text-gray-900 tracking-tight;
+    @apply text-2xl font-bold text-gray-900 dark:text-gray-100 tracking-tight;
   }
 
   .badge {
@@ -72,7 +73,7 @@ body {
 
 /* Ad placeholder styles */
 .ad-slot {
-  @apply bg-gray-50 border border-dashed border-gray-200 rounded-xl flex items-center justify-center text-gray-300 text-xs;
+  @apply bg-gray-50 dark:bg-gray-800 border border-dashed border-gray-200 dark:border-gray-600 rounded-xl flex items-center justify-center text-gray-300 dark:text-gray-600 text-xs;
   min-height: 90px;
 }
 
@@ -88,5 +89,5 @@ body {
 
 /* Result highlight */
 .result-highlight {
-  @apply bg-green-50 border border-green-100 rounded-xl p-4;
+  @apply bg-green-50 dark:bg-green-900/20 border border-green-100 dark:border-green-800 rounded-xl p-4;
 }

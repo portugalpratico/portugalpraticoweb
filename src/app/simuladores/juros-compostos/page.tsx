@@ -21,8 +21,8 @@ export default function JurosPage() {
         ]}
       />
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Calculadora de Juros Compostos</h1>
-        <p className="text-gray-500">Simule o crescimento do seu investimento com aportes regulares.</p>
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Calculadora de Juros Compostos</h1>
+        <p className="text-gray-500 dark:text-gray-400">Simule o crescimento do seu investimento com aportes regulares.</p>
       </div>
       <JurosSimulator />
       <AdSlot format="horizontal" className="my-8" />

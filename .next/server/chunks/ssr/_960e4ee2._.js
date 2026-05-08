@@ -50,12 +50,12 @@ function Breadcrumbs({ crumbs }) {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
                 "aria-label": "Breadcrumb",
-                className: "flex items-center gap-1.5 text-sm text-gray-500 mb-6",
+                className: "flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400 mb-6",
                 children: crumbs.map((c, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "flex items-center gap-1.5",
                         children: [
                             i > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-gray-300",
+                                className: "text-gray-300 dark:text-gray-600",
                                 children: "/"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Breadcrumbs.tsx",
@@ -64,14 +64,14 @@ function Breadcrumbs({ crumbs }) {
                             }, this),
                             c.href && i < crumbs.length - 1 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                 href: c.href,
-                                className: "hover:text-[#046A38] transition-colors",
+                                className: "hover:text-[#046A38] dark:hover:text-green-400 transition-colors",
                                 children: c.label
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Breadcrumbs.tsx",
                                 lineNumber: 28,
                                 columnNumber: 15
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-gray-700 font-medium",
+                                className: "text-gray-700 dark:text-gray-200 font-medium",
                                 children: c.label
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Breadcrumbs.tsx",
@@ -459,7 +459,7 @@ function SimuladoresPage() {
                 className: "mb-8",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "text-3xl font-bold text-gray-900 mb-2",
+                        className: "text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2",
                         children: "Simuladores Financeiros"
                     }, void 0, false, {
                         fileName: "[project]/src/app/simuladores/page.tsx",
@@ -467,7 +467,7 @@ function SimuladoresPage() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-gray-500",
+                        className: "text-gray-500 dark:text-gray-400",
                         children: "Ferramentas de cálculo financeiro para Portugal — rápidas, gratuitas e sem registo."
                     }, void 0, false, {
                         fileName: "[project]/src/app/simuladores/page.tsx",
@@ -489,7 +489,7 @@ function SimuladoresPage() {
                             className: "flex items-start gap-4",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center text-[#046A38] group-hover:bg-[#046A38] group-hover:text-white transition-colors shrink-0",
+                                    className: "w-12 h-12 bg-green-50 dark:bg-green-900/30 rounded-xl flex items-center justify-center text-[#046A38] dark:text-green-400 group-hover:bg-[#046A38] group-hover:text-white transition-colors shrink-0",
                                     children: s.icon
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/simuladores/page.tsx",
@@ -502,7 +502,7 @@ function SimuladoresPage() {
                                             className: "flex items-center gap-2 mb-1",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                    className: "font-semibold text-gray-900 group-hover:text-[#046A38] transition-colors",
+                                                    className: "font-semibold text-gray-900 dark:text-gray-100 group-hover:text-[#046A38] dark:group-hover:text-green-400 transition-colors",
                                                     children: s.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/simuladores/page.tsx",
@@ -510,7 +510,7 @@ function SimuladoresPage() {
                                                     columnNumber: 19
                                                 }, this),
                                                 s.badge && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "badge bg-green-50 text-[#046A38]",
+                                                    className: "badge bg-green-50 dark:bg-green-900/30 text-[#046A38] dark:text-green-400",
                                                     children: s.badge
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/simuladores/page.tsx",
@@ -524,7 +524,7 @@ function SimuladoresPage() {
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-sm text-gray-500 leading-relaxed",
+                                            className: "text-sm text-gray-500 dark:text-gray-400 leading-relaxed",
                                             children: s.description
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/simuladores/page.tsx",

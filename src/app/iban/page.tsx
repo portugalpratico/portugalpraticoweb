@@ -40,8 +40,8 @@ export default function IBANPage() {
       <Breadcrumbs crumbs={[{ label: "Início", href: "/" }, { label: "Validar IBAN" }]} />
 
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Validar IBAN</h1>
-        <p className="text-gray-500">Verifique se um IBAN português ou internacional é válido.</p>
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Validar IBAN</h1>
+        <p className="text-gray-500 dark:text-gray-400">Verifique se um IBAN português ou internacional é válido.</p>
       </div>
 
       <IBANValidator />
@@ -49,8 +49,8 @@ export default function IBANPage() {
       <AdSlot format="horizontal" className="my-8" />
 
       <div className="card mb-8">
-        <h2 className="font-semibold text-gray-900 mb-3">Estrutura do IBAN Português</h2>
-        <div className="bg-gray-50 rounded-xl p-4 font-mono text-sm mb-4 tracking-widest text-center text-gray-700">
+        <h2 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">Estrutura do IBAN Português</h2>
+        <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-4 font-mono text-sm mb-4 tracking-widest text-center text-gray-700 dark:text-gray-300">
           <span className="bg-blue-100 text-blue-700 px-1 rounded">PT50</span>
           {" "}
           <span className="bg-green-100 text-[#046A38] px-1 rounded">0000</span>
@@ -61,7 +61,7 @@ export default function IBANPage() {
           {" "}
           <span className="bg-red-100 text-red-700 px-1 rounded">00</span>
         </div>
-        <div className="grid grid-cols-2 gap-3 text-xs text-gray-600">
+        <div className="grid grid-cols-2 gap-3 text-xs text-gray-600 dark:text-gray-400">
           <div className="flex gap-2"><span className="w-2 h-2 rounded bg-blue-300 mt-0.5 shrink-0" /><span><strong>PT50</strong> — Código país + dígitos de controlo</span></div>
           <div className="flex gap-2"><span className="w-2 h-2 rounded bg-green-300 mt-0.5 shrink-0" /><span><strong>0000</strong> — Código do banco</span></div>
           <div className="flex gap-2"><span className="w-2 h-2 rounded bg-yellow-300 mt-0.5 shrink-0" /><span><strong>0000</strong> — Código da agência</span></div>

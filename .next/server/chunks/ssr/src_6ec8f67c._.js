@@ -48,7 +48,7 @@ function CodigoPostalSearch() {
                 className: "card",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                        className: "block text-sm font-medium text-gray-700 mb-2",
+                        className: "block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2",
                         children: "Pesquisar por rua, localidade ou código postal"
                     }, void 0, false, {
                         fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
@@ -146,7 +146,7 @@ function CodigoPostalSearch() {
                 columnNumber: 7
             }, this),
             error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "bg-red-50 border border-red-100 rounded-xl px-4 py-3 text-sm text-red-600",
+                className: "bg-red-50 dark:bg-red-900/20 border border-red-100 dark:border-red-800 rounded-xl px-4 py-3 text-sm text-red-600 dark:text-red-400",
                 children: error
             }, void 0, false, {
                 fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
@@ -154,7 +154,7 @@ function CodigoPostalSearch() {
                 columnNumber: 9
             }, this),
             results && results.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "bg-yellow-50 border border-yellow-100 rounded-xl px-4 py-3 text-sm text-yellow-700",
+                className: "bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-100 dark:border-yellow-800 rounded-xl px-4 py-3 text-sm text-yellow-700 dark:text-yellow-400",
                 children: [
                     'Nenhum resultado encontrado para "',
                     query,
@@ -166,13 +166,13 @@ function CodigoPostalSearch() {
                 columnNumber: 9
             }, this),
             results && results.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "bg-white rounded-2xl border border-gray-100 shadow-card overflow-hidden animate-fade-in",
+                className: "bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-card overflow-hidden animate-fade-in",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "px-5 py-3 bg-gray-50 border-b border-gray-100 flex items-center justify-between",
+                        className: "px-5 py-3 bg-gray-50 dark:bg-gray-900/50 border-b border-gray-100 dark:border-gray-700 flex items-center justify-between",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-xs text-gray-500 font-medium",
+                                className: "text-xs text-gray-500 dark:text-gray-400 font-medium",
                                 children: [
                                     results.length === 50 ? "50+" : results.length,
                                     " ",
@@ -187,7 +187,7 @@ function CodigoPostalSearch() {
                                 columnNumber: 13
                             }, this),
                             ms !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-xs text-gray-400",
+                                className: "text-xs text-gray-400 dark:text-gray-500",
                                 children: [
                                     ms,
                                     "ms"
@@ -204,15 +204,15 @@ function CodigoPostalSearch() {
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "divide-y divide-gray-50",
+                        className: "divide-y divide-gray-50 dark:divide-gray-700",
                         children: results.map((r, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "px-5 py-3.5 hover:bg-gray-50 flex items-start justify-between gap-4",
+                                className: "px-5 py-3.5 hover:bg-gray-50 dark:hover:bg-gray-700/50 flex items-start justify-between gap-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "min-w-0",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "font-mono font-bold text-[#046A38] text-base",
+                                                className: "font-mono font-bold text-[#046A38] dark:text-green-400 text-base",
                                                 children: r.codigoCompleto
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
@@ -220,7 +220,7 @@ function CodigoPostalSearch() {
                                                 columnNumber: 19
                                             }, this),
                                             (r.morada || r.localidadeEspecifica) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-sm text-gray-700 mt-0.5 truncate",
+                                                className: "text-sm text-gray-700 dark:text-gray-300 mt-0.5 truncate",
                                                 children: [
                                                     r.morada,
                                                     r.localidadeEspecifica
@@ -231,7 +231,7 @@ function CodigoPostalSearch() {
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-xs text-gray-500 mt-0.5",
+                                                className: "text-xs text-gray-500 dark:text-gray-400 mt-0.5",
                                                 children: [
                                                     r.localidade,
                                                     r.freguesia,
@@ -251,7 +251,7 @@ function CodigoPostalSearch() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>navigator.clipboard?.writeText(r.codigoCompleto),
-                                        className: "shrink-0 text-xs text-gray-400 hover:text-gray-600 px-2 py-1 border border-gray-200 rounded-lg hover:border-gray-300 transition-colors",
+                                        className: "shrink-0 text-xs text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 px-2 py-1 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-gray-300 dark:hover:border-gray-500 transition-colors",
                                         children: "Copiar"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
@@ -276,7 +276,7 @@ function CodigoPostalSearch() {
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "text-xs text-gray-400 text-center",
+                className: "text-xs text-gray-400 dark:text-gray-500 text-center",
                 children: [
                     "Base de dados CTT · ",
                     324180..toLocaleString("pt-PT"),
@@ -348,14 +348,14 @@ function FAQ({ items, title = "Perguntas Frequentes" }) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "space-y-2",
                         children: items.map((item, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-white rounded-xl border border-gray-100 overflow-hidden",
+                                className: "bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>setOpen(open === i ? null : i),
-                                        className: "w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors",
+                                        className: "w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "font-medium text-gray-900 text-sm",
+                                                className: "font-medium text-gray-900 dark:text-gray-100 text-sm",
                                                 children: item.question
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/FAQ.tsx",
@@ -363,7 +363,7 @@ function FAQ({ items, title = "Perguntas Frequentes" }) {
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                className: `w-4 h-4 text-gray-400 transition-transform ${open === i ? "rotate-180" : ""}`,
+                                                className: `w-4 h-4 text-gray-400 dark:text-gray-500 transition-transform shrink-0 ml-3 ${open === i ? "rotate-180" : ""}`,
                                                 fill: "none",
                                                 stroke: "currentColor",
                                                 viewBox: "0 0 24 24",
@@ -389,7 +389,7 @@ function FAQ({ items, title = "Perguntas Frequentes" }) {
                                         columnNumber: 15
                                     }, this),
                                     open === i && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "px-5 pb-4 text-sm text-gray-600 leading-relaxed border-t border-gray-50",
+                                        className: "px-5 pb-4 text-sm text-gray-600 dark:text-gray-400 leading-relaxed border-t border-gray-50 dark:border-gray-700",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "pt-3",
                                             children: item.answer

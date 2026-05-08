@@ -46,7 +46,7 @@ export default function CodigoPostalSearch() {
   return (
     <div className="space-y-4">
       <div className="card">
-        <label className="block text-sm font-medium text-gray-700 mb-2">
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
           Pesquisar por rua, localidade ou código postal
         </label>
         <div className="flex gap-3">
@@ -75,43 +75,43 @@ export default function CodigoPostalSearch() {
       </div>
 
       {error && (
-        <div className="bg-red-50 border border-red-100 rounded-xl px-4 py-3 text-sm text-red-600">
+        <div className="bg-red-50 dark:bg-red-900/20 border border-red-100 dark:border-red-800 rounded-xl px-4 py-3 text-sm text-red-600 dark:text-red-400">
           {error}
         </div>
       )}
 
       {results && results.length === 0 && (
-        <div className="bg-yellow-50 border border-yellow-100 rounded-xl px-4 py-3 text-sm text-yellow-700">
+        <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-100 dark:border-yellow-800 rounded-xl px-4 py-3 text-sm text-yellow-700 dark:text-yellow-400">
           Nenhum resultado encontrado para &quot;{query}&quot;.
         </div>
       )}
 
       {results && results.length > 0 && (
-        <div className="bg-white rounded-2xl border border-gray-100 shadow-card overflow-hidden animate-fade-in">
-          <div className="px-5 py-3 bg-gray-50 border-b border-gray-100 flex items-center justify-between">
-            <span className="text-xs text-gray-500 font-medium">
+        <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-card overflow-hidden animate-fade-in">
+          <div className="px-5 py-3 bg-gray-50 dark:bg-gray-900/50 border-b border-gray-100 dark:border-gray-700 flex items-center justify-between">
+            <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">
               {results.length === 50 ? "50+" : results.length}{" "}
               resultado{results.length !== 1 ? "s" : ""} encontrado{results.length !== 1 ? "s" : ""}
             </span>
-            {ms !== null && <span className="text-xs text-gray-400">{ms}ms</span>}
+            {ms !== null && <span className="text-xs text-gray-400 dark:text-gray-500">{ms}ms</span>}
           </div>
-          <div className="divide-y divide-gray-50">
+          <div className="divide-y divide-gray-50 dark:divide-gray-700">
             {results.map((r, i) => (
-              <div key={`${r.codigoCompleto}-${i}`} className="px-5 py-3.5 hover:bg-gray-50 flex items-start justify-between gap-4">
+              <div key={`${r.codigoCompleto}-${i}`} className="px-5 py-3.5 hover:bg-gray-50 dark:hover:bg-gray-700/50 flex items-start justify-between gap-4">
                 <div className="min-w-0">
-                  <span className="font-mono font-bold text-[#046A38] text-base">{r.codigoCompleto}</span>
+                  <span className="font-mono font-bold text-[#046A38] dark:text-green-400 text-base">{r.codigoCompleto}</span>
                   {(r.morada || r.localidadeEspecifica) && (
-                    <p className="text-sm text-gray-700 mt-0.5 truncate">
+                    <p className="text-sm text-gray-700 dark:text-gray-300 mt-0.5 truncate">
                       {[r.morada, r.localidadeEspecifica].filter(Boolean).join(", ")}
                     </p>
                   )}
-                  <p className="text-xs text-gray-500 mt-0.5">
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
                     {[r.localidade, r.freguesia, r.conselho, r.distrito].filter(Boolean).join(" · ")}
                   </p>
                 </div>
                 <button
                   onClick={() => navigator.clipboard?.writeText(r.codigoCompleto)}
-                  className="shrink-0 text-xs text-gray-400 hover:text-gray-600 px-2 py-1 border border-gray-200 rounded-lg hover:border-gray-300 transition-colors"
+                  className="shrink-0 text-xs text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 px-2 py-1 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-gray-300 dark:hover:border-gray-500 transition-colors"
                 >
                   Copiar
                 </button>
@@ -121,7 +121,7 @@ export default function CodigoPostalSearch() {
         </div>
       )}
 
-      <div className="text-xs text-gray-400 text-center">
+      <div className="text-xs text-gray-400 dark:text-gray-500 text-center">
         Base de dados CTT · {(324180).toLocaleString("pt-PT")} códigos postais
       </div>
     </div>

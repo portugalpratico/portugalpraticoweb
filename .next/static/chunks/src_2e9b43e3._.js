@@ -126,7 +126,7 @@ function SalarioSimulator() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                        className: "block text-sm font-medium text-gray-700 mb-1.5",
+                                        className: "block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5",
                                         children: "Salário Bruto Mensal (€)"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/salario-liquido/SalarioSimulator.tsx",
@@ -156,7 +156,7 @@ function SalarioSimulator() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                        className: "block text-sm font-medium text-gray-700 mb-1.5",
+                                        className: "block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5",
                                         children: "Meses de salário/ano"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/salario-liquido/SalarioSimulator.tsx",
@@ -221,7 +221,7 @@ function SalarioSimulator() {
                 className: "card animate-fade-in space-y-4",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        className: "font-semibold text-gray-900",
+                        className: "font-semibold text-gray-900 dark:text-gray-100",
                         children: "Resultado"
                     }, void 0, false, {
                         fileName: "[project]/src/app/simuladores/salario-liquido/SalarioSimulator.tsx",
@@ -229,10 +229,10 @@ function SalarioSimulator() {
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "bg-green-50 border border-green-100 rounded-xl p-5 text-center",
+                        className: "bg-green-50 dark:bg-green-900/20 border border-green-100 dark:border-green-800 rounded-xl p-5 text-center",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-sm text-gray-500 mb-1",
+                                className: "text-sm text-gray-500 dark:text-gray-400 mb-1",
                                 children: "Salário Líquido Mensal"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/simuladores/salario-liquido/SalarioSimulator.tsx",
@@ -257,10 +257,10 @@ function SalarioSimulator() {
                         className: "space-y-2 text-sm",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex justify-between py-2 border-b border-gray-50",
+                                className: "flex justify-between py-2 border-b border-gray-50 dark:border-gray-700",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-gray-600",
+                                        className: "text-gray-600 dark:text-gray-400",
                                         children: "Salário Bruto"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/salario-liquido/SalarioSimulator.tsx",
@@ -268,7 +268,7 @@ function SalarioSimulator() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "font-medium text-gray-900",
+                                        className: "font-medium text-gray-900 dark:text-gray-100",
                                         children: fmt(result.gross)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/salario-liquido/SalarioSimulator.tsx",
@@ -282,10 +282,10 @@ function SalarioSimulator() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex justify-between py-2 border-b border-gray-50",
+                                className: "flex justify-between py-2 border-b border-gray-50 dark:border-gray-700",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-gray-600",
+                                        className: "text-gray-600 dark:text-gray-400",
                                         children: "Desconto Segurança Social (11%)"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/salario-liquido/SalarioSimulator.tsx",
@@ -293,7 +293,7 @@ function SalarioSimulator() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "font-medium text-red-600",
+                                        className: "font-medium text-red-600 dark:text-red-400",
                                         children: [
                                             "− ",
                                             fmt(result.ss)
@@ -310,10 +310,10 @@ function SalarioSimulator() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex justify-between py-2 border-b border-gray-50",
+                                className: "flex justify-between py-2 border-b border-gray-50 dark:border-gray-700",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-gray-600",
+                                        className: "text-gray-600 dark:text-gray-400",
                                         children: "Retenção na Fonte IRS (mensal)"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/salario-liquido/SalarioSimulator.tsx",
@@ -321,7 +321,7 @@ function SalarioSimulator() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "font-medium text-red-600",
+                                        className: "font-medium text-red-600 dark:text-red-400",
                                         children: [
                                             "− ",
                                             fmt(result.monthlyIRS)
@@ -338,10 +338,10 @@ function SalarioSimulator() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex justify-between py-2 bg-green-50 rounded-lg px-3",
+                                className: "flex justify-between py-2 bg-green-50 dark:bg-green-900/20 rounded-lg px-3",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "font-semibold text-gray-900",
+                                        className: "font-semibold text-gray-900 dark:text-gray-100",
                                         children: "Salário Líquido"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/salario-liquido/SalarioSimulator.tsx",
@@ -349,7 +349,7 @@ function SalarioSimulator() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "font-bold text-[#046A38] text-base",
+                                        className: "font-bold text-[#046A38] dark:text-green-400 text-base",
                                         children: fmt(result.net)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/salario-liquido/SalarioSimulator.tsx",
@@ -372,10 +372,10 @@ function SalarioSimulator() {
                         className: "grid grid-cols-2 gap-3 text-sm",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-gray-50 rounded-xl p-3 text-center",
+                                className: "bg-gray-50 dark:bg-gray-700 rounded-xl p-3 text-center",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-gray-500 text-xs mb-1",
+                                        className: "text-gray-500 dark:text-gray-400 text-xs mb-1",
                                         children: "Rendimento anual bruto"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/salario-liquido/SalarioSimulator.tsx",
@@ -383,7 +383,7 @@ function SalarioSimulator() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "font-bold text-gray-900",
+                                        className: "font-bold text-gray-900 dark:text-gray-100",
                                         children: fmt(result.annualGross)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/salario-liquido/SalarioSimulator.tsx",
@@ -397,10 +397,10 @@ function SalarioSimulator() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-gray-50 rounded-xl p-3 text-center",
+                                className: "bg-gray-50 dark:bg-gray-700 rounded-xl p-3 text-center",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-gray-500 text-xs mb-1",
+                                        className: "text-gray-500 dark:text-gray-400 text-xs mb-1",
                                         children: "IRS anual estimado"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/salario-liquido/SalarioSimulator.tsx",
@@ -408,7 +408,7 @@ function SalarioSimulator() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "font-bold text-red-600",
+                                        className: "font-bold text-red-600 dark:text-red-400",
                                         children: fmt(result.annualIRS)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/salario-liquido/SalarioSimulator.tsx",
@@ -428,7 +428,7 @@ function SalarioSimulator() {
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-xs text-gray-400",
+                        className: "text-xs text-gray-400 dark:text-gray-500",
                         children: "* Cálculo estimado. Os valores reais podem variar conforme situação fiscal, deduções e tabelas de retenção aplicáveis. Consulte sempre um contabilista."
                     }, void 0, false, {
                         fileName: "[project]/src/app/simuladores/salario-liquido/SalarioSimulator.tsx",
@@ -511,14 +511,14 @@ function FAQ({ items, title = "Perguntas Frequentes" }) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "space-y-2",
                         children: items.map((item, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-white rounded-xl border border-gray-100 overflow-hidden",
+                                className: "bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>setOpen(open === i ? null : i),
-                                        className: "w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors",
+                                        className: "w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "font-medium text-gray-900 text-sm",
+                                                className: "font-medium text-gray-900 dark:text-gray-100 text-sm",
                                                 children: item.question
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/FAQ.tsx",
@@ -526,7 +526,7 @@ function FAQ({ items, title = "Perguntas Frequentes" }) {
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                className: `w-4 h-4 text-gray-400 transition-transform ${open === i ? "rotate-180" : ""}`,
+                                                className: `w-4 h-4 text-gray-400 dark:text-gray-500 transition-transform shrink-0 ml-3 ${open === i ? "rotate-180" : ""}`,
                                                 fill: "none",
                                                 stroke: "currentColor",
                                                 viewBox: "0 0 24 24",
@@ -552,7 +552,7 @@ function FAQ({ items, title = "Perguntas Frequentes" }) {
                                         columnNumber: 15
                                     }, this),
                                     open === i && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "px-5 pb-4 text-sm text-gray-600 leading-relaxed border-t border-gray-50",
+                                        className: "px-5 pb-4 text-sm text-gray-600 dark:text-gray-400 leading-relaxed border-t border-gray-50 dark:border-gray-700",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "pt-3",
                                             children: item.answer

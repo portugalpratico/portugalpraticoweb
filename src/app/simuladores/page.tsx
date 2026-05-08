@@ -45,25 +45,25 @@ export default function SimuladoresPage() {
       <Breadcrumbs crumbs={[{ label: "Início", href: "/" }, { label: "Simuladores" }]} />
 
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Simuladores Financeiros</h1>
-        <p className="text-gray-500">Ferramentas de cálculo financeiro para Portugal — rápidas, gratuitas e sem registo.</p>
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Simuladores Financeiros</h1>
+        <p className="text-gray-500 dark:text-gray-400">Ferramentas de cálculo financeiro para Portugal — rápidas, gratuitas e sem registo.</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {sims.map((s) => (
           <Link key={s.href} href={s.href} className="card group hover:-translate-y-0.5 transition-all">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center text-[#046A38] group-hover:bg-[#046A38] group-hover:text-white transition-colors shrink-0">
+              <div className="w-12 h-12 bg-green-50 dark:bg-green-900/30 rounded-xl flex items-center justify-center text-[#046A38] dark:text-green-400 group-hover:bg-[#046A38] group-hover:text-white transition-colors shrink-0">
                 {s.icon}
               </div>
               <div>
                 <div className="flex items-center gap-2 mb-1">
-                  <h2 className="font-semibold text-gray-900 group-hover:text-[#046A38] transition-colors">{s.title}</h2>
+                  <h2 className="font-semibold text-gray-900 dark:text-gray-100 group-hover:text-[#046A38] dark:group-hover:text-green-400 transition-colors">{s.title}</h2>
                   {s.badge && (
-                    <span className="badge bg-green-50 text-[#046A38]">{s.badge}</span>
+                    <span className="badge bg-green-50 dark:bg-green-900/30 text-[#046A38] dark:text-green-400">{s.badge}</span>
                   )}
                 </div>
-                <p className="text-sm text-gray-500 leading-relaxed">{s.description}</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">{s.description}</p>
               </div>
             </div>
           </Link>

@@ -50,7 +50,7 @@ export default function SalarioSimulator() {
       <div className="card">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1.5">Salário Bruto Mensal (€)</label>
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">Salário Bruto Mensal (€)</label>
             <input
               type="number"
               value={bruto}
@@ -63,7 +63,7 @@ export default function SalarioSimulator() {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1.5">Meses de salário/ano</label>
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">Meses de salário/ano</label>
             <select
               value={months}
               onChange={(e) => setMonths(Number(e.target.value) as 12 | 14)}
@@ -79,47 +79,47 @@ export default function SalarioSimulator() {
 
       {result && (
         <div className="card animate-fade-in space-y-4">
-          <h3 className="font-semibold text-gray-900">Resultado</h3>
+          <h3 className="font-semibold text-gray-900 dark:text-gray-100">Resultado</h3>
 
           {/* Main result */}
-          <div className="bg-green-50 border border-green-100 rounded-xl p-5 text-center">
-            <p className="text-sm text-gray-500 mb-1">Salário Líquido Mensal</p>
+          <div className="bg-green-50 dark:bg-green-900/20 border border-green-100 dark:border-green-800 rounded-xl p-5 text-center">
+            <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">Salário Líquido Mensal</p>
             <p className="text-4xl font-bold text-[#046A38]">{fmt(result.net)}</p>
           </div>
 
           {/* Breakdown */}
           <div className="space-y-2 text-sm">
-            <div className="flex justify-between py-2 border-b border-gray-50">
-              <span className="text-gray-600">Salário Bruto</span>
-              <span className="font-medium text-gray-900">{fmt(result.gross)}</span>
+            <div className="flex justify-between py-2 border-b border-gray-50 dark:border-gray-700">
+              <span className="text-gray-600 dark:text-gray-400">Salário Bruto</span>
+              <span className="font-medium text-gray-900 dark:text-gray-100">{fmt(result.gross)}</span>
             </div>
-            <div className="flex justify-between py-2 border-b border-gray-50">
-              <span className="text-gray-600">Desconto Segurança Social (11%)</span>
-              <span className="font-medium text-red-600">− {fmt(result.ss)}</span>
+            <div className="flex justify-between py-2 border-b border-gray-50 dark:border-gray-700">
+              <span className="text-gray-600 dark:text-gray-400">Desconto Segurança Social (11%)</span>
+              <span className="font-medium text-red-600 dark:text-red-400">− {fmt(result.ss)}</span>
             </div>
-            <div className="flex justify-between py-2 border-b border-gray-50">
-              <span className="text-gray-600">Retenção na Fonte IRS (mensal)</span>
-              <span className="font-medium text-red-600">− {fmt(result.monthlyIRS)}</span>
+            <div className="flex justify-between py-2 border-b border-gray-50 dark:border-gray-700">
+              <span className="text-gray-600 dark:text-gray-400">Retenção na Fonte IRS (mensal)</span>
+              <span className="font-medium text-red-600 dark:text-red-400">− {fmt(result.monthlyIRS)}</span>
             </div>
-            <div className="flex justify-between py-2 bg-green-50 rounded-lg px-3">
-              <span className="font-semibold text-gray-900">Salário Líquido</span>
-              <span className="font-bold text-[#046A38] text-base">{fmt(result.net)}</span>
+            <div className="flex justify-between py-2 bg-green-50 dark:bg-green-900/20 rounded-lg px-3">
+              <span className="font-semibold text-gray-900 dark:text-gray-100">Salário Líquido</span>
+              <span className="font-bold text-[#046A38] dark:text-green-400 text-base">{fmt(result.net)}</span>
             </div>
           </div>
 
           {/* Annual */}
           <div className="grid grid-cols-2 gap-3 text-sm">
-            <div className="bg-gray-50 rounded-xl p-3 text-center">
-              <p className="text-gray-500 text-xs mb-1">Rendimento anual bruto</p>
-              <p className="font-bold text-gray-900">{fmt(result.annualGross)}</p>
+            <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-3 text-center">
+              <p className="text-gray-500 dark:text-gray-400 text-xs mb-1">Rendimento anual bruto</p>
+              <p className="font-bold text-gray-900 dark:text-gray-100">{fmt(result.annualGross)}</p>
             </div>
-            <div className="bg-gray-50 rounded-xl p-3 text-center">
-              <p className="text-gray-500 text-xs mb-1">IRS anual estimado</p>
-              <p className="font-bold text-red-600">{fmt(result.annualIRS)}</p>
+            <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-3 text-center">
+              <p className="text-gray-500 dark:text-gray-400 text-xs mb-1">IRS anual estimado</p>
+              <p className="font-bold text-red-600 dark:text-red-400">{fmt(result.annualIRS)}</p>
             </div>
           </div>
 
-          <p className="text-xs text-gray-400">
+          <p className="text-xs text-gray-400 dark:text-gray-500">
             * Cálculo estimado. Os valores reais podem variar conforme situação fiscal, deduções e tabelas de retenção aplicáveis. Consulte sempre um contabilista.
           </p>
         </div>

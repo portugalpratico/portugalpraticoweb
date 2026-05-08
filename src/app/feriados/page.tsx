@@ -97,8 +97,8 @@ export default function FeriadosPage() {
         <Breadcrumbs crumbs={[{ label: "Início", href: "/" }, { label: "Feriados" }]} />
 
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Feriados Nacionais de Portugal</h1>
-          <p className="text-gray-500">Lista completa dos feriados obrigatórios por ano.</p>
+          <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Feriados Nacionais de Portugal</h1>
+          <p className="text-gray-500 dark:text-gray-400">Lista completa dos feriados obrigatórios por ano.</p>
         </div>
 
         <AdSlot format="horizontal" className="mb-8" />

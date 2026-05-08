@@ -1,13 +1,7 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/api/codigo-postal/route": "app/api/codigo-postal/route.js",
-  "/codigo-postal/[slug]/page": "app/codigo-postal/[slug]/page.js",
   "/codigo-postal/page": "app/codigo-postal/page.js",
-  "/feriados/page": "app/feriados/page.js",
-  "/localidades/page": "app/localidades/page.js",
-  "/nif/page": "app/nif/page.js",
   "/page": "app/page.js",
-  "/simuladores/credito-habitacao/page": "app/simuladores/credito-habitacao/page.js",
-  "/simuladores/juros-compostos/page": "app/simuladores/juros-compostos/page.js",
-  "/simuladores/page": "app/simuladores/page.js"
+  "/simuladores/salario-liquido/page": "app/simuladores/salario-liquido/page.js"
 }

@@ -88,15 +88,15 @@ export default async function ConcelhoPage({ params }: Props) {
         <div className="mb-8">
           <div className="flex items-start justify-between gap-4 flex-wrap">
             <div>
-              <h1 className="text-3xl font-bold text-gray-900 mb-1">Concelho de {c.nome}</h1>
-              <p className="text-gray-500 text-sm">
+              <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">Concelho de {c.nome}</h1>
+              <p className="text-gray-500 dark:text-gray-400 text-sm">
                 Distrito de{" "}
                 <Link href={`/localidades/${distrito}`} className="text-[#046A38] hover:underline font-medium">
                   {d.nome}
                 </Link>
               </p>
             </div>
-            <span className="badge bg-green-50 text-[#046A38] text-sm px-3 py-1.5 font-mono font-semibold">
+            <span className="badge bg-green-50 dark:bg-green-900/20 text-[#046A38] dark:text-green-400 text-sm px-3 py-1.5 font-mono font-semibold">
               CP {c.cpPrefix}
             </span>
           </div>
@@ -112,17 +112,17 @@ export default async function ConcelhoPage({ params }: Props) {
 
         {/* Description */}
         <section className="card mb-6">
-          <h2 className="font-semibold text-gray-900 mb-2">Sobre {c.nome}</h2>
-          <p className="text-sm text-gray-600 leading-relaxed">{c.descricao}</p>
+          <h2 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Sobre {c.nome}</h2>
+          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{c.descricao}</p>
         </section>
 
         {/* Notable places */}
         {c.notaveis && c.notaveis.length > 0 && (
           <section className="card mb-6">
-            <h2 className="font-semibold text-gray-900 mb-3">Pontos de Interesse</h2>
+            <h2 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">Pontos de Interesse</h2>
             <div className="flex flex-wrap gap-2">
               {c.notaveis.map((n) => (
-                <span key={n} className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-green-50 text-[#046A38] rounded-lg text-xs font-medium">
+                <span key={n} className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-green-50 dark:bg-green-900/20 text-[#046A38] dark:text-green-400 rounded-lg text-xs font-medium">
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   </svg>
@@ -136,13 +136,13 @@ export default async function ConcelhoPage({ params }: Props) {
         <AdSlot format="horizontal" className="mb-6" />
 
         {/* Postal code CTA */}
-        <section className="bg-green-50 border border-green-100 rounded-2xl p-6 mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <section className="bg-green-50 dark:bg-green-900/20 border border-green-100 dark:border-green-800 rounded-2xl p-6 mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
-            <h3 className="font-semibold text-gray-900 mb-1">
+            <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">
               Código Postal de {c.nome}
             </h3>
-            <p className="text-sm text-gray-500">
-              Os códigos postais de {c.nome} começam em <strong className="text-gray-700 font-mono">{c.cpPrefix}</strong>. Pesquise a sua rua.
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              Os códigos postais de {c.nome} começam em <strong className="text-gray-700 dark:text-gray-300 font-mono">{c.cpPrefix}</strong>. Pesquise a sua rua.
             </p>
           </div>
           <Link href={`/codigo-postal?q=${encodeURIComponent(c.nome)}`} className="btn-primary shrink-0">
@@ -159,10 +159,10 @@ export default async function ConcelhoPage({ params }: Props) {
                 <Link
                   key={v.slug}
                   href={`/localidades/${distrito}/${v.slug}`}
-                  className="flex items-center justify-between px-4 py-3 bg-white rounded-xl border border-gray-100 hover:border-[#046A38] hover:text-[#046A38] text-gray-700 text-sm font-medium transition-colors group"
+                  className="flex items-center justify-between px-4 py-3 bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 hover:border-[#046A38] dark:hover:border-green-500 hover:text-[#046A38] dark:hover:text-green-400 text-gray-700 dark:text-gray-300 text-sm font-medium transition-colors group"
                 >
                   <span>{v.nome}</span>
-                  <svg className="w-3.5 h-3.5 text-gray-300 group-hover:text-[#046A38] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-3.5 h-3.5 text-gray-300 dark:text-gray-600 group-hover:text-[#046A38] dark:group-hover:text-green-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
@@ -193,10 +193,10 @@ function StatCard({
   label: string; value: string; unit: string; color: "green" | "blue" | "purple" | "orange";
 }) {
   const colors = {
-    green: "bg-green-50 text-[#046A38]",
-    blue: "bg-blue-50 text-blue-700",
-    purple: "bg-purple-50 text-purple-700",
-    orange: "bg-orange-50 text-orange-700",
+    green: "bg-green-50 dark:bg-green-900/20 text-[#046A38] dark:text-green-400",
+    blue: "bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400",
+    purple: "bg-purple-50 dark:bg-purple-900/20 text-purple-700 dark:text-purple-400",
+    orange: "bg-orange-50 dark:bg-orange-900/20 text-orange-700 dark:text-orange-400",
   };
   return (
     <div className={`${colors[color]} rounded-2xl p-4 text-center`}>

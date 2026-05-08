@@ -55,14 +55,14 @@ function FAQ({ items, title = "Perguntas Frequentes" }) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "space-y-2",
                         children: items.map((item, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-white rounded-xl border border-gray-100 overflow-hidden",
+                                className: "bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>setOpen(open === i ? null : i),
-                                        className: "w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors",
+                                        className: "w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "font-medium text-gray-900 text-sm",
+                                                className: "font-medium text-gray-900 dark:text-gray-100 text-sm",
                                                 children: item.question
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/FAQ.tsx",
@@ -70,7 +70,7 @@ function FAQ({ items, title = "Perguntas Frequentes" }) {
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                className: `w-4 h-4 text-gray-400 transition-transform ${open === i ? "rotate-180" : ""}`,
+                                                className: `w-4 h-4 text-gray-400 dark:text-gray-500 transition-transform shrink-0 ml-3 ${open === i ? "rotate-180" : ""}`,
                                                 fill: "none",
                                                 stroke: "currentColor",
                                                 viewBox: "0 0 24 24",
@@ -96,7 +96,7 @@ function FAQ({ items, title = "Perguntas Frequentes" }) {
                                         columnNumber: 15
                                     }, this),
                                     open === i && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "px-5 pb-4 text-sm text-gray-600 leading-relaxed border-t border-gray-50",
+                                        className: "px-5 pb-4 text-sm text-gray-600 dark:text-gray-400 leading-relaxed border-t border-gray-50 dark:border-gray-700",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "pt-3",
                                             children: item.answer
@@ -212,10 +212,10 @@ function FeriadosViewer({ feriados }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex bg-gray-100 rounded-xl p-1 gap-1 mb-6",
+                className: "flex bg-gray-100 dark:bg-gray-700 rounded-xl p-1 gap-1 mb-6",
                 children: years.map((y)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>setSelectedYear(y),
-                        className: `flex-1 py-2.5 text-sm font-medium rounded-lg transition-colors ${selectedYear === y ? "bg-white text-gray-900 shadow-sm" : "text-gray-500 hover:text-gray-700"}`,
+                        className: `flex-1 py-2.5 text-sm font-medium rounded-lg transition-colors ${selectedYear === y ? "bg-white dark:bg-gray-600 text-gray-900 dark:text-gray-100 shadow-sm" : "text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"}`,
                         children: [
                             y,
                             y === currentYear && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -238,13 +238,13 @@ function FeriadosViewer({ feriados }) {
                 columnNumber: 7
             }, this),
             list.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-card",
+                className: "bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 overflow-hidden shadow-card",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "px-5 py-3 bg-gray-50 border-b border-gray-100 flex items-center justify-between",
+                        className: "px-5 py-3 bg-gray-50 dark:bg-gray-900/50 border-b border-gray-100 dark:border-gray-700 flex items-center justify-between",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-sm font-semibold text-gray-700",
+                                className: "text-sm font-semibold text-gray-700 dark:text-gray-300",
                                 children: [
                                     "Feriados Nacionais ",
                                     selectedYear
@@ -255,7 +255,7 @@ function FeriadosViewer({ feriados }) {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-xs text-gray-400",
+                                className: "text-xs text-gray-400 dark:text-gray-500",
                                 children: [
                                     list.length,
                                     " feriados"
@@ -275,11 +275,11 @@ function FeriadosViewer({ feriados }) {
                         className: "w-full text-sm",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
-                                className: "bg-gray-50 border-b border-gray-100",
+                                className: "bg-gray-50 dark:bg-gray-900/50 border-b border-gray-100 dark:border-gray-700",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                            className: "px-5 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wide",
+                                            className: "px-5 py-3 text-left text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide",
                                             children: "Data"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/feriados/FeriadosViewer.tsx",
@@ -287,7 +287,7 @@ function FeriadosViewer({ feriados }) {
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                            className: "px-5 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wide hidden sm:table-cell",
+                                            className: "px-5 py-3 text-left text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide hidden sm:table-cell",
                                             children: "Dia"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/feriados/FeriadosViewer.tsx",
@@ -295,7 +295,7 @@ function FeriadosViewer({ feriados }) {
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                            className: "px-5 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wide",
+                                            className: "px-5 py-3 text-left text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide",
                                             children: "Feriado"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/feriados/FeriadosViewer.tsx",
@@ -314,15 +314,15 @@ function FeriadosViewer({ feriados }) {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
-                                className: "divide-y divide-gray-50",
+                                className: "divide-y divide-gray-50 dark:divide-gray-700",
                                 children: list.map((f)=>{
                                     const isWeekend = f.dia === "Sábado" || f.dia === "Domingo";
                                     const isToday = f.data === new Date().toISOString().slice(0, 10);
                                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
-                                        className: `transition-colors ${isToday ? "bg-green-50" : "hover:bg-gray-50"} ${isWeekend ? "opacity-60" : ""}`,
+                                        className: `transition-colors ${isToday ? "bg-green-50 dark:bg-green-900/20" : "hover:bg-gray-50 dark:hover:bg-gray-700/50"} ${isWeekend ? "opacity-60" : ""}`,
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                className: "px-5 py-3.5 font-medium text-gray-900 whitespace-nowrap",
+                                                className: "px-5 py-3.5 font-medium text-gray-900 dark:text-gray-100 whitespace-nowrap",
                                                 children: formatDate(f.data)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/feriados/FeriadosViewer.tsx",
@@ -330,7 +330,7 @@ function FeriadosViewer({ feriados }) {
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                className: "px-5 py-3.5 text-gray-500 hidden sm:table-cell whitespace-nowrap",
+                                                className: "px-5 py-3.5 text-gray-500 dark:text-gray-400 hidden sm:table-cell whitespace-nowrap",
                                                 children: f.dia
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/feriados/FeriadosViewer.tsx",
@@ -338,7 +338,7 @@ function FeriadosViewer({ feriados }) {
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                className: "px-5 py-3.5 text-gray-700",
+                                                className: "px-5 py-3.5 text-gray-700 dark:text-gray-300",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: f.nome
@@ -348,7 +348,7 @@ function FeriadosViewer({ feriados }) {
                                                         columnNumber: 23
                                                     }, this),
                                                     isToday && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "ml-2 badge bg-green-100 text-[#046A38]",
+                                                        className: "ml-2 badge bg-green-100 dark:bg-green-900/30 text-[#046A38] dark:text-green-400",
                                                         children: "Hoje"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/feriados/FeriadosViewer.tsx",
@@ -356,7 +356,7 @@ function FeriadosViewer({ feriados }) {
                                                         columnNumber: 25
                                                     }, this),
                                                     f.facultativo && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "ml-2 badge bg-yellow-50 text-yellow-700",
+                                                        className: "ml-2 badge bg-yellow-50 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400",
                                                         children: "Facultativo"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/feriados/FeriadosViewer.tsx",
@@ -364,7 +364,7 @@ function FeriadosViewer({ feriados }) {
                                                         columnNumber: 25
                                                     }, this),
                                                     isWeekend && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "ml-2 badge bg-gray-100 text-gray-500",
+                                                        className: "ml-2 badge bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400",
                                                         children: "Fim de semana"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/feriados/FeriadosViewer.tsx",
@@ -401,7 +401,7 @@ function FeriadosViewer({ feriados }) {
                 lineNumber: 52,
                 columnNumber: 9
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "bg-yellow-50 border border-yellow-100 rounded-2xl px-6 py-8 text-center text-sm text-yellow-700",
+                className: "bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-100 dark:border-yellow-800 rounded-2xl px-6 py-8 text-center text-sm text-yellow-700 dark:text-yellow-400",
                 children: [
                     "Dados para ",
                     selectedYear,

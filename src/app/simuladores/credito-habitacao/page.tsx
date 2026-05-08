@@ -37,8 +37,8 @@ export default function CreditoHabitacaoPage() {
         ]}
       />
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Simulador Crédito Habitação</h1>
-        <p className="text-gray-500">Calcule a prestação mensal do seu crédito habitação.</p>
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Simulador Crédito Habitação</h1>
+        <p className="text-gray-500 dark:text-gray-400">Calcule a prestação mensal do seu crédito habitação.</p>
       </div>
       <CreditoSimulator />
       <AdSlot format="horizontal" className="my-8" />

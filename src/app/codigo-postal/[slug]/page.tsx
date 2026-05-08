@@ -32,12 +32,12 @@ export default async function CodigoPostalCidadePage({ params }: Props) {
       />
 
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Código Postal {name}</h1>
-        <p className="text-gray-500">Todos os códigos postais de {name} e arredores.</p>
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Código Postal {name}</h1>
+        <p className="text-gray-500 dark:text-gray-400">Todos os códigos postais de {name} e arredores.</p>
       </div>
 
       <div className="card mb-6">
-        <p className="text-sm text-gray-600">
+        <p className="text-sm text-gray-600 dark:text-gray-400">
           Para ver os códigos postais de <strong>{name}</strong>, utilize a pesquisa abaixo ou consulte a{" "}
           <Link href="/codigo-postal" className="text-[#046A38] hover:underline">
             ferramenta de pesquisa de código postal

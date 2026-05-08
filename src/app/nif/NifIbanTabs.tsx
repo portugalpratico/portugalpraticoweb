@@ -50,11 +50,11 @@ export default function NifIbanTabs() {
   return (
     <>
       {/* Tab switcher */}
-      <div className="flex bg-gray-100 rounded-xl p-1 gap-1 mb-6">
+      <div className="flex bg-gray-100 dark:bg-gray-700 rounded-xl p-1 gap-1 mb-6">
         <button
           onClick={() => setTab("nif")}
           className={`flex-1 py-2.5 text-sm font-medium rounded-lg transition-colors ${
-            tab === "nif" ? "bg-white text-gray-900 shadow-sm" : "text-gray-500 hover:text-gray-700"
+            tab === "nif" ? "bg-white dark:bg-gray-600 text-gray-900 dark:text-gray-100 shadow-sm" : "text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
           }`}
         >
           Validar NIF
@@ -62,7 +62,7 @@ export default function NifIbanTabs() {
         <button
           onClick={() => setTab("iban")}
           className={`flex-1 py-2.5 text-sm font-medium rounded-lg transition-colors ${
-            tab === "iban" ? "bg-white text-gray-900 shadow-sm" : "text-gray-500 hover:text-gray-700"
+            tab === "iban" ? "bg-white dark:bg-gray-600 text-gray-900 dark:text-gray-100 shadow-sm" : "text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
           }`}
         >
           Validar IBAN
@@ -76,8 +76,8 @@ export default function NifIbanTabs() {
       {tab === "nif" ? (
         <>
           <div className="card mb-8">
-            <h2 className="font-semibold text-gray-900 mb-3">Estrutura do NIF Português</h2>
-            <div className="space-y-2 text-sm text-gray-600">
+            <h2 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">Estrutura do NIF Português</h2>
+            <div className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
               {[
                 ["Começa em 1, 2 ou 3", "Pessoa singular"],
                 ["Começa em 45", "Cidadão não residente"],
@@ -87,8 +87,8 @@ export default function NifIbanTabs() {
                 ["Começa em 77", "Pessoa coletiva não residente"],
                 ["Começa em 8", "Empresário em nome individual"],
               ].map(([k, v], i, arr) => (
-                <div key={k} className={`flex justify-between py-2 ${i < arr.length - 1 ? "border-b border-gray-50" : ""}`}>
-                  <span className="font-medium">{k}</span>
+                <div key={k} className={`flex justify-between py-2 ${i < arr.length - 1 ? "border-b border-gray-50 dark:border-gray-700" : ""}`}>
+                  <span className="font-medium dark:text-gray-300">{k}</span>
                   <span>{v}</span>
                 </div>
               ))}
@@ -99,8 +99,8 @@ export default function NifIbanTabs() {
       ) : (
         <>
           <div className="card mb-8">
-            <h2 className="font-semibold text-gray-900 mb-3">Estrutura do IBAN Português</h2>
-            <div className="bg-gray-50 rounded-xl p-4 font-mono text-sm mb-4 tracking-widest text-center text-gray-700">
+            <h2 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">Estrutura do IBAN Português</h2>
+            <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-4 font-mono text-sm mb-4 tracking-widest text-center text-gray-700 dark:text-gray-300">
               <span className="bg-blue-100 text-blue-700 px-1 rounded">PT50</span>
               {" "}
               <span className="bg-green-100 text-[#046A38] px-1 rounded">0000</span>
@@ -111,7 +111,7 @@ export default function NifIbanTabs() {
               {" "}
               <span className="bg-red-100 text-red-700 px-1 rounded">00</span>
             </div>
-            <div className="grid grid-cols-2 gap-3 text-xs text-gray-600">
+            <div className="grid grid-cols-2 gap-3 text-xs text-gray-600 dark:text-gray-400">
               <div className="flex gap-2"><span className="w-2 h-2 rounded bg-blue-300 mt-0.5 shrink-0" /><span><strong>PT50</strong> — Código país + dígitos de controlo</span></div>
               <div className="flex gap-2"><span className="w-2 h-2 rounded bg-green-300 mt-0.5 shrink-0" /><span><strong>0000</strong> — Código do banco</span></div>
               <div className="flex gap-2"><span className="w-2 h-2 rounded bg-yellow-300 mt-0.5 shrink-0" /><span><strong>0000</strong> — Código da agência</span></div>

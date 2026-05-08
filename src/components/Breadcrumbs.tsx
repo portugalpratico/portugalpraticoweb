@@ -20,14 +20,14 @@ export default function Breadcrumbs({ crumbs }: { crumbs: Crumb[] }) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-sm text-gray-500 mb-6">
+      <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400 mb-6">
         {crumbs.map((c, i) => (
           <span key={i} className="flex items-center gap-1.5">
-            {i > 0 && <span className="text-gray-300">/</span>}
+            {i > 0 && <span className="text-gray-300 dark:text-gray-600">/</span>}
             {c.href && i < crumbs.length - 1 ? (
-              <Link href={c.href} className="hover:text-[#046A38] transition-colors">{c.label}</Link>
+              <Link href={c.href} className="hover:text-[#046A38] dark:hover:text-green-400 transition-colors">{c.label}</Link>
             ) : (
-              <span className="text-gray-700 font-medium">{c.label}</span>
+              <span className="text-gray-700 dark:text-gray-200 font-medium">{c.label}</span>
             )}
           </span>
         ))}
