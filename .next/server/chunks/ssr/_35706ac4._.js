@@ -88,12 +88,12 @@ function Breadcrumbs({ crumbs }) {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
                 "aria-label": "Breadcrumb",
-                className: "flex items-center gap-1.5 text-sm text-gray-500 mb-6",
+                className: "flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400 mb-6",
                 children: crumbs.map((c, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "flex items-center gap-1.5",
                         children: [
                             i > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-gray-300",
+                                className: "text-gray-300 dark:text-gray-600",
                                 children: "/"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Breadcrumbs.tsx",
@@ -102,14 +102,14 @@ function Breadcrumbs({ crumbs }) {
                             }, this),
                             c.href && i < crumbs.length - 1 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                 href: c.href,
-                                className: "hover:text-[#046A38] transition-colors",
+                                className: "hover:text-[#046A38] dark:hover:text-green-400 transition-colors",
                                 children: c.label
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Breadcrumbs.tsx",
                                 lineNumber: 28,
                                 columnNumber: 15
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-gray-700 font-medium",
+                                className: "text-gray-700 dark:text-gray-200 font-medium",
                                 children: c.label
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Breadcrumbs.tsx",
@@ -274,7 +274,7 @@ function CreditoHabitacaoPage() {
                 className: "mb-8",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "text-3xl font-bold text-gray-900 mb-2",
+                        className: "text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2",
                         children: "Simulador Crédito Habitação"
                     }, void 0, false, {
                         fileName: "[project]/src/app/simuladores/credito-habitacao/page.tsx",
@@ -282,7 +282,7 @@ function CreditoHabitacaoPage() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-gray-500",
+                        className: "text-gray-500 dark:text-gray-400",
                         children: "Calcule a prestação mensal do seu crédito habitação."
                     }, void 0, false, {
                         fileName: "[project]/src/app/simuladores/credito-habitacao/page.tsx",

@@ -31,7 +31,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <Link href="/">
-              <Image src="/logo_horizontal.png" alt="Portugal Prático" width={238} height={119} className="h-13 w-auto mb-3 dark:bg-gray-300 dark:rounded-[15px]" />
+              <Image src="/logo_horizontal_white.png" alt="Portugal Prático" width={238} height={119} className="h-13 w-auto mb-3 dark:hidden" />
+              <Image src="/logo_horizontal_dark.png" alt="Portugal Prático" width={238} height={119} className="h-13 w-auto mb-3 hidden dark:block" />
             </Link>
             <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
               Ferramentas úteis para o dia a dia em Portugal. Rápido, simples e gratuito.

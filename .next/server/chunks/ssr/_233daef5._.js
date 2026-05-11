@@ -88,12 +88,12 @@ function Breadcrumbs({ crumbs }) {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
                 "aria-label": "Breadcrumb",
-                className: "flex items-center gap-1.5 text-sm text-gray-500 mb-6",
+                className: "flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400 mb-6",
                 children: crumbs.map((c, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "flex items-center gap-1.5",
                         children: [
                             i > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-gray-300",
+                                className: "text-gray-300 dark:text-gray-600",
                                 children: "/"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Breadcrumbs.tsx",
@@ -102,14 +102,14 @@ function Breadcrumbs({ crumbs }) {
                             }, this),
                             c.href && i < crumbs.length - 1 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                 href: c.href,
-                                className: "hover:text-[#046A38] transition-colors",
+                                className: "hover:text-[#046A38] dark:hover:text-green-400 transition-colors",
                                 children: c.label
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Breadcrumbs.tsx",
                                 lineNumber: 28,
                                 columnNumber: 15
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-gray-700 font-medium",
+                                className: "text-gray-700 dark:text-gray-200 font-medium",
                                 children: c.label
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Breadcrumbs.tsx",
@@ -220,7 +220,7 @@ function IVAPage() {
                 className: "mb-8",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "text-3xl font-bold text-gray-900 mb-2",
+                        className: "text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2",
                         children: "Calculadora IVA Portugal"
                     }, void 0, false, {
                         fileName: "[project]/src/app/simuladores/iva/page.tsx",
@@ -228,7 +228,7 @@ function IVAPage() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-gray-500",
+                        className: "text-gray-500 dark:text-gray-400",
                         children: "Adicione ou remova IVA nas taxas portuguesas de 6%, 13% e 23%."
                     }, void 0, false, {
                         fileName: "[project]/src/app/simuladores/iva/page.tsx",
@@ -258,7 +258,7 @@ function IVAPage() {
                 className: "card",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "font-semibold text-gray-900 mb-3",
+                        className: "font-semibold text-gray-900 dark:text-gray-100 mb-3",
                         children: "Taxas de IVA em Portugal"
                     }, void 0, false, {
                         fileName: "[project]/src/app/simuladores/iva/page.tsx",
@@ -269,10 +269,10 @@ function IVAPage() {
                         className: "space-y-2 text-sm",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-start gap-3 p-3 bg-green-50 rounded-xl",
+                                className: "flex items-start gap-3 p-3 bg-green-50 dark:bg-green-900/20 rounded-xl",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "badge bg-green-100 text-green-700 shrink-0",
+                                        className: "badge bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 shrink-0",
                                         children: "6%"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/iva/page.tsx",
@@ -282,7 +282,7 @@ function IVAPage() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "font-medium text-gray-900",
+                                                className: "font-medium text-gray-900 dark:text-gray-100",
                                                 children: "Taxa Reduzida"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/simuladores/iva/page.tsx",
@@ -290,7 +290,7 @@ function IVAPage() {
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-gray-500 text-xs mt-0.5",
+                                                className: "text-gray-500 dark:text-gray-400 text-xs mt-0.5",
                                                 children: "Alimentação básica, medicamentos, transportes públicos, livros, alguns serviços de saúde"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/simuladores/iva/page.tsx",
@@ -310,10 +310,10 @@ function IVAPage() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-start gap-3 p-3 bg-yellow-50 rounded-xl",
+                                className: "flex items-start gap-3 p-3 bg-yellow-50 dark:bg-yellow-900/20 rounded-xl",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "badge bg-yellow-100 text-yellow-700 shrink-0",
+                                        className: "badge bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 shrink-0",
                                         children: "13%"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/iva/page.tsx",
@@ -323,7 +323,7 @@ function IVAPage() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "font-medium text-gray-900",
+                                                className: "font-medium text-gray-900 dark:text-gray-100",
                                                 children: "Taxa Intermédia"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/simuladores/iva/page.tsx",
@@ -331,7 +331,7 @@ function IVAPage() {
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-gray-500 text-xs mt-0.5",
+                                                className: "text-gray-500 dark:text-gray-400 text-xs mt-0.5",
                                                 children: "Restauração, produtos alimentares processados, vinho, azeite"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/simuladores/iva/page.tsx",
@@ -351,10 +351,10 @@ function IVAPage() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-start gap-3 p-3 bg-red-50 rounded-xl",
+                                className: "flex items-start gap-3 p-3 bg-red-50 dark:bg-red-900/20 rounded-xl",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "badge bg-red-100 text-red-700 shrink-0",
+                                        className: "badge bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400 shrink-0",
                                         children: "23%"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/iva/page.tsx",
@@ -364,7 +364,7 @@ function IVAPage() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "font-medium text-gray-900",
+                                                className: "font-medium text-gray-900 dark:text-gray-100",
                                                 children: "Taxa Normal"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/simuladores/iva/page.tsx",
@@ -372,7 +372,7 @@ function IVAPage() {
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-gray-500 text-xs mt-0.5",
+                                                className: "text-gray-500 dark:text-gray-400 text-xs mt-0.5",
                                                 children: "Maioria dos bens e serviços não abrangidos pelas taxas reduzida ou intermédia"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/simuladores/iva/page.tsx",

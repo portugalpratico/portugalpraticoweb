@@ -169,6 +169,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$postalSearch$2
 ;
 ;
 async function GET(req) {
+    if (req.headers.get("x-api-source") !== "pp-web") {
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
+            error: "Forbidden"
+        }, {
+            status: 403
+        });
+    }
     const q = req.nextUrl.searchParams.get("q")?.trim() ?? "";
     if (!q || q.length < 2) {
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({

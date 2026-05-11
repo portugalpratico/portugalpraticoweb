@@ -61,7 +61,7 @@ function JurosSimulator() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                        className: "block text-sm font-medium text-gray-700 mb-1.5",
+                                        className: "block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5",
                                         children: "Capital inicial (€)"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/juros-compostos/JurosSimulator.tsx",
@@ -89,7 +89,7 @@ function JurosSimulator() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                        className: "block text-sm font-medium text-gray-700 mb-1.5",
+                                        className: "block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5",
                                         children: "Aporte mensal (€)"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/juros-compostos/JurosSimulator.tsx",
@@ -117,7 +117,7 @@ function JurosSimulator() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                        className: "block text-sm font-medium text-gray-700 mb-1.5",
+                                        className: "block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5",
                                         children: "Taxa anual (%)"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/juros-compostos/JurosSimulator.tsx",
@@ -146,7 +146,7 @@ function JurosSimulator() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                        className: "block text-sm font-medium text-gray-700 mb-1.5",
+                                        className: "block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5",
                                         children: "Prazo (anos)"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/juros-compostos/JurosSimulator.tsx",
@@ -197,7 +197,7 @@ function JurosSimulator() {
                 className: "card animate-fade-in space-y-4",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        className: "font-semibold text-gray-900",
+                        className: "font-semibold text-gray-900 dark:text-gray-100",
                         children: [
                             "Resultado ao fim de ",
                             anos,
@@ -212,10 +212,10 @@ function JurosSimulator() {
                         className: "grid grid-cols-3 gap-3",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-green-50 rounded-xl p-4 text-center",
+                                className: "bg-green-50 dark:bg-green-900/20 rounded-xl p-4 text-center",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-xs text-gray-500 mb-1",
+                                        className: "text-xs text-gray-500 dark:text-gray-400 mb-1",
                                         children: "Capital final"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/juros-compostos/JurosSimulator.tsx",
@@ -223,7 +223,7 @@ function JurosSimulator() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "font-bold text-[#046A38] text-lg",
+                                        className: "font-bold text-[#046A38] dark:text-green-400 text-lg",
                                         children: fmt(result.total)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/juros-compostos/JurosSimulator.tsx",
@@ -237,10 +237,10 @@ function JurosSimulator() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-blue-50 rounded-xl p-4 text-center",
+                                className: "bg-blue-50 dark:bg-blue-900/20 rounded-xl p-4 text-center",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-xs text-gray-500 mb-1",
+                                        className: "text-xs text-gray-500 dark:text-gray-400 mb-1",
                                         children: "Total investido"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/juros-compostos/JurosSimulator.tsx",
@@ -248,7 +248,7 @@ function JurosSimulator() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "font-bold text-blue-700 text-lg",
+                                        className: "font-bold text-blue-700 dark:text-blue-400 text-lg",
                                         children: fmt(result.invested)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/juros-compostos/JurosSimulator.tsx",
@@ -262,10 +262,10 @@ function JurosSimulator() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-yellow-50 rounded-xl p-4 text-center",
+                                className: "bg-yellow-50 dark:bg-yellow-900/20 rounded-xl p-4 text-center",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-xs text-gray-500 mb-1",
+                                        className: "text-xs text-gray-500 dark:text-gray-400 mb-1",
                                         children: "Juros ganhos"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/juros-compostos/JurosSimulator.tsx",
@@ -273,7 +273,7 @@ function JurosSimulator() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "font-bold text-yellow-700 text-lg",
+                                        className: "font-bold text-yellow-700 dark:text-yellow-400 text-lg",
                                         children: fmt(result.gain)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/simuladores/juros-compostos/JurosSimulator.tsx",
@@ -293,16 +293,16 @@ function JurosSimulator() {
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "overflow-hidden rounded-xl border border-gray-100",
+                        className: "overflow-hidden rounded-xl border border-gray-100 dark:border-gray-700",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
                             className: "w-full text-sm",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
-                                    className: "bg-gray-50",
+                                    className: "bg-gray-50 dark:bg-gray-700",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                                className: "px-4 py-2 text-left text-xs font-medium text-gray-500",
+                                                className: "px-4 py-2 text-left text-xs font-medium text-gray-500 dark:text-gray-400",
                                                 children: "Ano"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/simuladores/juros-compostos/JurosSimulator.tsx",
@@ -310,7 +310,7 @@ function JurosSimulator() {
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                                className: "px-4 py-2 text-right text-xs font-medium text-gray-500",
+                                                className: "px-4 py-2 text-right text-xs font-medium text-gray-500 dark:text-gray-400",
                                                 children: "Valor acumulado"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/simuladores/juros-compostos/JurosSimulator.tsx",
@@ -318,7 +318,7 @@ function JurosSimulator() {
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                                className: "px-4 py-2 text-right text-xs font-medium text-gray-500",
+                                                className: "px-4 py-2 text-right text-xs font-medium text-gray-500 dark:text-gray-400",
                                                 children: "% crescimento"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/simuladores/juros-compostos/JurosSimulator.tsx",
@@ -337,12 +337,12 @@ function JurosSimulator() {
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
-                                    className: "divide-y divide-gray-50",
+                                    className: "divide-y divide-gray-50 dark:divide-gray-700",
                                     children: result.byYear.filter((_, i)=>i % Math.max(1, Math.floor(result.byYear.length / 10)) === 0 || i === result.byYear.length - 1).map((row)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
-                                            className: "hover:bg-gray-50",
+                                            className: "hover:bg-gray-50 dark:hover:bg-gray-700/50",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                    className: "px-4 py-2.5 font-medium text-gray-900",
+                                                    className: "px-4 py-2.5 font-medium text-gray-900 dark:text-gray-100",
                                                     children: row.year
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/simuladores/juros-compostos/JurosSimulator.tsx",
@@ -350,7 +350,7 @@ function JurosSimulator() {
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                    className: "px-4 py-2.5 text-right font-medium text-[#046A38]",
+                                                    className: "px-4 py-2.5 text-right font-medium text-[#046A38] dark:text-green-400",
                                                     children: fmt(row.value)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/simuladores/juros-compostos/JurosSimulator.tsx",
@@ -358,7 +358,7 @@ function JurosSimulator() {
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                    className: "px-4 py-2.5 text-right text-gray-500",
+                                                    className: "px-4 py-2.5 text-right text-gray-500 dark:text-gray-400",
                                                     children: [
                                                         "+",
                                                         ((row.value - result.invested) / result.invested * 100).toFixed(0),

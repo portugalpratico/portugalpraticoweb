@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import CodigoPostalSearch from "./CodigoPostalSearch";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQ from "@/components/FAQ";
@@ -36,11 +37,7 @@ const popularCities = [
   "Leiria", "Viseu", "Évora", "Beja", "Santarém",
 ];
 
-export default function CodigoPostalPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ q?: string }>;
-}) {
+export default function CodigoPostalPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
       <Breadcrumbs crumbs={[{ label: "Início", href: "/" }, { label: "Código Postal" }]} />
@@ -50,7 +47,9 @@ export default function CodigoPostalPage({
         <p className="text-gray-500 dark:text-gray-400">Encontre qualquer código postal português por rua, localidade ou código.</p>
       </div>
 
-      <CodigoPostalSearch />
+      <Suspense fallback={<div className="card animate-pulse h-20" />}>
+        <CodigoPostalSearch />
+      </Suspense>
 
       <AdSlot format="horizontal" className="my-8" />
 
@@ -61,7 +60,7 @@ export default function CodigoPostalPage({
           {popularCities.map((city) => (
             <Link
               key={city}
-              href={`/codigo-postal/${city.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/\s+/g, "-")}`}
+              href={`/codigo-postal?q=${encodeURIComponent(city)}`}
               className="px-3 py-1.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:border-[#046A38] hover:text-[#046A38] dark:hover:border-green-500 dark:hover:text-green-400 transition-colors"
             >
               Código postal {city}

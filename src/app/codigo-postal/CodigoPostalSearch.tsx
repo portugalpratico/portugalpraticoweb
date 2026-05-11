@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
+import { useSearchParams } from "next/navigation";
 
 interface CPResult {
   codigoCompleto: string;
@@ -13,13 +14,16 @@ interface CPResult {
 }
 
 export default function CodigoPostalSearch() {
-  const [query, setQuery] = useState("");
+  const searchParams = useSearchParams();
+  const urlQuery = searchParams.get("q") ?? "";
+
+  const [query, setQuery] = useState(urlQuery);
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState<CPResult[] | null>(null);
   const [error, setError] = useState("");
   const [ms, setMs] = useState<number | null>(null);
 
-  const search = async (q = query) => {
+  const search = useCallback(async (q: string) => {
     const trimmed = q.trim();
     if (!trimmed) return;
     setLoading(true);
@@ -28,7 +32,9 @@ export default function CodigoPostalSearch() {
     setMs(null);
 
     try {
-      const res = await fetch(`/api/codigo-postal?q=${encodeURIComponent(trimmed)}`);
+      const res = await fetch(`/api/codigo-postal?q=${encodeURIComponent(trimmed)}`, {
+        headers: { "x-api-source": "pp-web" },
+      });
       const data = await res.json();
       if (!res.ok) {
         setError(data.error ?? "Erro ao pesquisar.");
@@ -41,7 +47,15 @@ export default function CodigoPostalSearch() {
     } finally {
       setLoading(false);
     }
-  };
+  }, []);
+
+  // Runs whenever the URL ?q= param changes (including on first load)
+  useEffect(() => {
+    if (urlQuery.trim()) {
+      setQuery(urlQuery);
+      search(urlQuery);
+    }
+  }, [urlQuery, search]);
 
   return (
     <div className="space-y-4">
@@ -54,11 +68,11 @@ export default function CodigoPostalSearch() {
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            onKeyDown={(e) => e.key === "Enter" && search()}
+            onKeyDown={(e) => e.key === "Enter" && search(query)}
             placeholder="Ex: Rua Augusta Lisboa, 1000-001, Porto..."
             className="input-field"
           />
-          <button onClick={() => search()} disabled={loading} className="btn-primary shrink-0">
+          <button onClick={() => search(query)} disabled={loading} className="btn-primary shrink-0">
             {loading ? (
               <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />

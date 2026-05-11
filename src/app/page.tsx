@@ -85,11 +85,19 @@ export default function HomePage() {
           <div className="text-center max-w-3xl mx-auto">
             <div className="flex justify-center mb-8">
               <Image
-                src="/logo.png"
+                src="/logo_white.png"
                 alt="Portugal Prático"
                 width={480}
                 height={160}
-                className="h-28 sm:h-36 lg:h-44 w-auto drop-shadow-sm dark:bg-gray-300 dark:rounded-[15px]"
+                className="h-28 sm:h-36 lg:h-44 w-auto drop-shadow-sm dark:hidden"
+                priority
+              />
+              <Image
+                src="/logo_dark.png"
+                alt="Portugal Prático"
+                width={480}
+                height={160}
+                className="h-28 sm:h-36 lg:h-44 w-auto drop-shadow-sm hidden dark:block"
                 priority
               />
             </div>

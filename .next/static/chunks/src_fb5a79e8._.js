@@ -44,11 +44,11 @@ function IVACalculator() {
         className: "card space-y-5",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex bg-gray-100 rounded-xl p-1 gap-1",
+                className: "flex bg-gray-100 dark:bg-gray-700 rounded-xl p-1 gap-1",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>setMode("add"),
-                        className: `flex-1 py-2 text-sm font-medium rounded-lg transition-colors ${mode === "add" ? "bg-white text-gray-900 shadow-sm" : "text-gray-500 hover:text-gray-700"}`,
+                        className: `flex-1 py-2 text-sm font-medium rounded-lg transition-colors ${mode === "add" ? "bg-white dark:bg-gray-600 text-gray-900 dark:text-gray-100 shadow-sm" : "text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"}`,
                         children: "Adicionar IVA"
                     }, void 0, false, {
                         fileName: "[project]/src/app/simuladores/iva/IVACalculator.tsx",
@@ -57,7 +57,7 @@ function IVACalculator() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>setMode("remove"),
-                        className: `flex-1 py-2 text-sm font-medium rounded-lg transition-colors ${mode === "remove" ? "bg-white text-gray-900 shadow-sm" : "text-gray-500 hover:text-gray-700"}`,
+                        className: `flex-1 py-2 text-sm font-medium rounded-lg transition-colors ${mode === "remove" ? "bg-white dark:bg-gray-600 text-gray-900 dark:text-gray-100 shadow-sm" : "text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"}`,
                         children: "Remover IVA"
                     }, void 0, false, {
                         fileName: "[project]/src/app/simuladores/iva/IVACalculator.tsx",
@@ -73,7 +73,7 @@ function IVACalculator() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                        className: "block text-sm font-medium text-gray-700 mb-2",
+                        className: "block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2",
                         children: "Taxa de IVA"
                     }, void 0, false, {
                         fileName: "[project]/src/app/simuladores/iva/IVACalculator.tsx",
@@ -87,7 +87,7 @@ function IVACalculator() {
                                     setRate(r);
                                     setUseCustom(false);
                                 },
-                                className: `flex-1 py-2.5 rounded-xl text-sm font-semibold border transition-colors ${!useCustom && rate === r ? "bg-[#046A38] border-[#046A38] text-white" : "bg-white border-gray-200 text-gray-700 hover:border-gray-300"}`,
+                                className: `flex-1 py-2.5 rounded-xl text-sm font-semibold border transition-colors ${!useCustom && rate === r ? "bg-[#046A38] border-[#046A38] text-white" : "bg-white dark:bg-gray-700 border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:border-gray-300 dark:hover:border-gray-500"}`,
                                 children: [
                                     r,
                                     "%"
@@ -106,7 +106,7 @@ function IVACalculator() {
                         className: "mt-2 flex items-center gap-2",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                className: "text-sm text-gray-500 shrink-0",
+                                className: "text-sm text-gray-500 dark:text-gray-400 shrink-0",
                                 children: "Outra taxa:"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/simuladores/iva/IVACalculator.tsx",
@@ -165,7 +165,7 @@ function IVACalculator() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                        className: "block text-sm font-medium text-gray-700 mb-1.5",
+                        className: "block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5",
                         children: [
                             "Valor ",
                             mode === "add" ? "sem IVA (€)" : "com IVA (€)"
@@ -198,10 +198,10 @@ function IVACalculator() {
                 className: "space-y-2 animate-fade-in text-sm",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex justify-between py-2 border-b border-gray-100",
+                        className: "flex justify-between py-2 border-b border-gray-100 dark:border-gray-700",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-gray-600",
+                                className: "text-gray-600 dark:text-gray-400",
                                 children: "Valor base (sem IVA)"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/simuladores/iva/IVACalculator.tsx",
@@ -209,7 +209,7 @@ function IVACalculator() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "font-medium",
+                                className: "font-medium dark:text-gray-200",
                                 children: fmt(base)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/simuladores/iva/IVACalculator.tsx",
@@ -223,10 +223,10 @@ function IVACalculator() {
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex justify-between py-2 border-b border-gray-100",
+                        className: "flex justify-between py-2 border-b border-gray-100 dark:border-gray-700",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-gray-600",
+                                className: "text-gray-600 dark:text-gray-400",
                                 children: [
                                     "IVA (",
                                     effectiveRate,
@@ -238,7 +238,7 @@ function IVACalculator() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "font-medium text-[#DA291C]",
+                                className: "font-medium text-[#DA291C] dark:text-red-400",
                                 children: fmt(ivaAmount)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/simuladores/iva/IVACalculator.tsx",
@@ -252,10 +252,10 @@ function IVACalculator() {
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex justify-between py-2 bg-green-50 rounded-xl px-3",
+                        className: "flex justify-between py-2 bg-green-50 dark:bg-green-900/20 rounded-xl px-3",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "font-semibold",
+                                className: "font-semibold dark:text-gray-200",
                                 children: "Total com IVA"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/simuladores/iva/IVACalculator.tsx",
@@ -263,7 +263,7 @@ function IVACalculator() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "font-bold text-[#046A38] text-base",
+                                className: "font-bold text-[#046A38] dark:text-green-400 text-base",
                                 children: fmt(mode === "add" ? total : num)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/simuladores/iva/IVACalculator.tsx",

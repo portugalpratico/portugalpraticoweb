@@ -2,6 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { searchPostalCodes } from "@/lib/postalSearch";
 
 export async function GET(req: NextRequest) {
+  if (req.headers.get("x-api-source") !== "pp-web") {
+    return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+  }
+
   const q = req.nextUrl.searchParams.get("q")?.trim() ?? "";
 
   if (!q || q.length < 2) {

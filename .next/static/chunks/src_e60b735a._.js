@@ -10,39 +10,61 @@ __turbopack_context__.s({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
 ;
+;
 function CodigoPostalSearch() {
     _s();
-    const [query, setQuery] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const searchParams = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"])();
+    const urlQuery = searchParams.get("q") ?? "";
+    const [query, setQuery] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(urlQuery);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [results, setResults] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [ms, setMs] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
-    const search = async (q = query)=>{
-        const trimmed = q.trim();
-        if (!trimmed) return;
-        setLoading(true);
-        setError("");
-        setResults(null);
-        setMs(null);
-        try {
-            const res = await fetch(`/api/codigo-postal?q=${encodeURIComponent(trimmed)}`);
-            const data = await res.json();
-            if (!res.ok) {
-                setError(data.error ?? "Erro ao pesquisar.");
-            } else {
-                setResults(data.results ?? []);
-                setMs(data.ms ?? null);
+    const search = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "CodigoPostalSearch.useCallback[search]": async (q)=>{
+            const trimmed = q.trim();
+            if (!trimmed) return;
+            setLoading(true);
+            setError("");
+            setResults(null);
+            setMs(null);
+            try {
+                const res = await fetch(`/api/codigo-postal?q=${encodeURIComponent(trimmed)}`, {
+                    headers: {
+                        "x-api-source": "pp-web"
+                    }
+                });
+                const data = await res.json();
+                if (!res.ok) {
+                    setError(data.error ?? "Erro ao pesquisar.");
+                } else {
+                    setResults(data.results ?? []);
+                    setMs(data.ms ?? null);
+                }
+            } catch  {
+                setError("Erro ao pesquisar. Por favor tente novamente.");
+            } finally{
+                setLoading(false);
             }
-        } catch  {
-            setError("Erro ao pesquisar. Por favor tente novamente.");
-        } finally{
-            setLoading(false);
         }
-    };
+    }["CodigoPostalSearch.useCallback[search]"], []);
+    // Runs whenever the URL ?q= param changes (including on first load)
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "CodigoPostalSearch.useEffect": ()=>{
+            if (urlQuery.trim()) {
+                setQuery(urlQuery);
+                search(urlQuery);
+            }
+        }
+    }["CodigoPostalSearch.useEffect"], [
+        urlQuery,
+        search
+    ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "space-y-4",
         children: [
@@ -54,7 +76,7 @@ function CodigoPostalSearch() {
                         children: "Pesquisar por rua, localidade ou código postal"
                     }, void 0, false, {
                         fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                        lineNumber: 49,
+                        lineNumber: 63,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -64,16 +86,16 @@ function CodigoPostalSearch() {
                                 type: "search",
                                 value: query,
                                 onChange: (e)=>setQuery(e.target.value),
-                                onKeyDown: (e)=>e.key === "Enter" && search(),
+                                onKeyDown: (e)=>e.key === "Enter" && search(query),
                                 placeholder: "Ex: Rua Augusta Lisboa, 1000-001, Porto...",
                                 className: "input-field"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                                lineNumber: 53,
+                                lineNumber: 67,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: ()=>search(),
+                                onClick: ()=>search(query),
                                 disabled: loading,
                                 className: "btn-primary shrink-0",
                                 children: [
@@ -91,7 +113,7 @@ function CodigoPostalSearch() {
                                                 strokeWidth: "4"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                                                lineNumber: 64,
+                                                lineNumber: 78,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -100,13 +122,13 @@ function CodigoPostalSearch() {
                                                 d: "M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                                                lineNumber: 65,
+                                                lineNumber: 79,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                                        lineNumber: 63,
+                                        lineNumber: 77,
                                         columnNumber: 15
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                         className: "w-4 h-4",
@@ -120,31 +142,31 @@ function CodigoPostalSearch() {
                                             d: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                                            lineNumber: 69,
+                                            lineNumber: 83,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                                        lineNumber: 68,
+                                        lineNumber: 82,
                                         columnNumber: 15
                                     }, this),
                                     "Pesquisar"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                                lineNumber: 61,
+                                lineNumber: 75,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                        lineNumber: 52,
+                        lineNumber: 66,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                lineNumber: 48,
+                lineNumber: 62,
                 columnNumber: 7
             }, this),
             error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -152,7 +174,7 @@ function CodigoPostalSearch() {
                 children: error
             }, void 0, false, {
                 fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                lineNumber: 78,
+                lineNumber: 92,
                 columnNumber: 9
             }, this),
             results && results.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -164,7 +186,7 @@ function CodigoPostalSearch() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                lineNumber: 84,
+                lineNumber: 98,
                 columnNumber: 9
             }, this),
             results && results.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -185,7 +207,7 @@ function CodigoPostalSearch() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                                lineNumber: 92,
+                                lineNumber: 106,
                                 columnNumber: 13
                             }, this),
                             ms !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -196,13 +218,13 @@ function CodigoPostalSearch() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                                lineNumber: 96,
+                                lineNumber: 110,
                                 columnNumber: 29
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                        lineNumber: 91,
+                        lineNumber: 105,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -218,7 +240,7 @@ function CodigoPostalSearch() {
                                                 children: r.codigoCompleto
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                                                lineNumber: 102,
+                                                lineNumber: 116,
                                                 columnNumber: 19
                                             }, this),
                                             (r.morada || r.localidadeEspecifica) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -229,7 +251,7 @@ function CodigoPostalSearch() {
                                                 ].filter(Boolean).join(", ")
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                                                lineNumber: 104,
+                                                lineNumber: 118,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -242,13 +264,13 @@ function CodigoPostalSearch() {
                                                 ].filter(Boolean).join(" · ")
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                                                lineNumber: 108,
+                                                lineNumber: 122,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                                        lineNumber: 101,
+                                        lineNumber: 115,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -257,24 +279,24 @@ function CodigoPostalSearch() {
                                         children: "Copiar"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                                        lineNumber: 112,
+                                        lineNumber: 126,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, `${r.codigoCompleto}-${i}`, true, {
                                 fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                                lineNumber: 100,
+                                lineNumber: 114,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                        lineNumber: 98,
+                        lineNumber: 112,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                lineNumber: 90,
+                lineNumber: 104,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -286,17 +308,21 @@ function CodigoPostalSearch() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-                lineNumber: 124,
+                lineNumber: 138,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/codigo-postal/CodigoPostalSearch.tsx",
-        lineNumber: 47,
+        lineNumber: 61,
         columnNumber: 5
     }, this);
 }
-_s(CodigoPostalSearch, "CM7zHzeRZckfphqWrAPLceBubOc=");
+_s(CodigoPostalSearch, "pF07ZXfa2sf9FQWZvRJggJ5CCo8=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"]
+    ];
+});
 _c = CodigoPostalSearch;
 var _c;
 __turbopack_context__.k.register(_c, "CodigoPostalSearch");

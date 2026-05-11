@@ -46,11 +46,19 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center shrink-0">
             <Image
-              src="/logo_horizontal.png"
+              src="/logo_horizontal_white.png"
               alt="Portugal Prático"
               width={238}
               height={119}
-              className="h-13 w-auto dark:bg-gray-300 dark:rounded-[15px]"
+              className="h-13 w-auto dark:hidden"
+              priority
+            />
+            <Image
+              src="/logo_horizontal_dark.png"
+              alt="Portugal Prático"
+              width={238}
+              height={119}
+              className="h-13 w-auto hidden dark:block"
               priority
             />
           </Link>

@@ -1,7 +1,4 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/api/codigo-postal/route": "app/api/codigo-postal/route.js",
-  "/codigo-postal/page": "app/codigo-postal/page.js",
-  "/page": "app/page.js",
-  "/simuladores/salario-liquido/page": "app/simuladores/salario-liquido/page.js"
+  "/page": "app/page.js"
 }
