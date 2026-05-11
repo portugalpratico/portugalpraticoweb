@@ -42,6 +42,7 @@ export const metadata: Metadata = {
     description: "Ferramentas úteis para o dia a dia em Portugal.",
   },
   alternates: { canonical: siteUrl },
+  verification: { google: "lHjXaJGY2veKkH11Ju0lGOn98HgkeQyt2cuFPANycG8" },
 };
 
 export default function RootLayout({
