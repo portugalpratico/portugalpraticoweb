@@ -29,14 +29,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "monthly" as const,
   }));
 
-  const codigoPostalPages = [
-    "lisboa", "porto", "braga", "aveiro", "coimbra", "faro", "setubal",
-    "leiria", "viseu", "evora",
-  ].map((c) => ({
-    url: `${siteUrl}/codigo-postal/${c}`,
-    priority: 0.7,
-    changeFrequency: "monthly" as const,
-  }));
-
-  return [...staticPages, ...distritoPages, ...codigoPostalPages];
+  return [...staticPages, ...distritoPages];
 }
