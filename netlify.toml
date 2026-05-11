@@ -9,6 +9,9 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
+[functions]
+  included_files = ["data/codigos-postais.json"]
+
 [dev]
   command = "npm run dev"
   port = 3000
