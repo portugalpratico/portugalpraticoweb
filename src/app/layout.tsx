@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ThemeProvider from "@/components/ThemeProvider";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://portugalpratico.pt";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://portugalpratico.netlify.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

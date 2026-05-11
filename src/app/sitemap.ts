@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://portugalpratico.pt";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://portugalpratico.netlify.app";
 
 const distritos = [
   "aveiro", "beja", "braga", "braganca", "castelo-branco", "coimbra",
