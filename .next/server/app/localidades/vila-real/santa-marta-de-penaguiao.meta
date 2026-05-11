@@ -1,0 +1,7 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "4294967294",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/localidades/layout,_N_T_/localidades/[distrito]/layout,_N_T_/localidades/[distrito]/[concelho]/layout,_N_T_/localidades/[distrito]/[concelho]/page,_N_T_/localidades/vila-real/santa-marta-de-penaguiao"
+  }
+}

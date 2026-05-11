@@ -1,5 +1,20 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
   "/api/codigo-postal/route": "app/api/codigo-postal/route.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/codigo-postal/[slug]/page": "app/codigo-postal/[slug]/page.js",
+  "/page": "app/page.js",
+  "/feriados/page": "app/feriados/page.js",
+  "/iban/page": "app/iban/page.js",
+  "/nif/page": "app/nif/page.js",
   "/codigo-postal/page": "app/codigo-postal/page.js",
-  "/page": "app/page.js"
+  "/simuladores/credito-habitacao/page": "app/simuladores/credito-habitacao/page.js",
+  "/localidades/page": "app/localidades/page.js",
+  "/simuladores/salario-liquido/page": "app/simuladores/salario-liquido/page.js",
+  "/localidades/[distrito]/page": "app/localidades/[distrito]/page.js",
+  "/simuladores/iva/page": "app/simuladores/iva/page.js",
+  "/simuladores/juros-compostos/page": "app/simuladores/juros-compostos/page.js",
+  "/simuladores/page": "app/simuladores/page.js",
+  "/localidades/[distrito]/[concelho]/page": "app/localidades/[distrito]/[concelho]/page.js"
 }

@@ -1,34 +1,155 @@
 {
   "pages": {
-    "/codigo-postal/page": [
-      "static/chunks/src_app_globals_b805903d.css",
-      "static/chunks/node_modules_next_7c89e613._.js",
-      "static/chunks/src_components_03ef435b._.js",
-      "static/chunks/src_app_layout_tsx_c0237562._.js",
-      "static/chunks/src_e60b735a._.js",
-      "static/chunks/src_app_codigo-postal_page_tsx_0d778012._.js",
-      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
-      "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
-      "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",
-      "static/chunks/node_modules_next_dist_2ecbf5fa._.js",
-      "static/chunks/node_modules_@swc_helpers_cjs_00636ac3._.js",
-      "static/chunks/_e69f0d32._.js",
-      "static/chunks/_93808211._.js"
+    "/_not-found/page": [
+      "static/chunks/webpack-7f168d1886c817f0.js",
+      "static/chunks/4bd1b696-647ed93fb4e77618.js",
+      "static/chunks/684-5ea027e881d74d13.js",
+      "static/chunks/main-app-eb9ce9da3564b719.js",
+      "static/chunks/app/_not-found/page-e6362b9be0aab909.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-7f168d1886c817f0.js",
+      "static/chunks/4bd1b696-647ed93fb4e77618.js",
+      "static/chunks/684-5ea027e881d74d13.js",
+      "static/chunks/main-app-eb9ce9da3564b719.js",
+      "static/css/07a9aa4a3043635f.css",
+      "static/chunks/874-b1c51c32ac41a820.js",
+      "static/chunks/63-143b30dbbfb3ec3e.js",
+      "static/chunks/app/layout-51629c7a18baf412.js"
+    ],
+    "/api/codigo-postal/route": [
+      "static/chunks/webpack-7f168d1886c817f0.js",
+      "static/chunks/4bd1b696-647ed93fb4e77618.js",
+      "static/chunks/684-5ea027e881d74d13.js",
+      "static/chunks/main-app-eb9ce9da3564b719.js",
+      "static/chunks/app/api/codigo-postal/route-b96a37b65b769056.js"
+    ],
+    "/robots.txt/route": [
+      "static/chunks/webpack-7f168d1886c817f0.js",
+      "static/chunks/4bd1b696-647ed93fb4e77618.js",
+      "static/chunks/684-5ea027e881d74d13.js",
+      "static/chunks/main-app-eb9ce9da3564b719.js",
+      "static/chunks/app/robots.txt/route-7739401282d9ee82.js"
+    ],
+    "/sitemap.xml/route": [
+      "static/chunks/webpack-7f168d1886c817f0.js",
+      "static/chunks/4bd1b696-647ed93fb4e77618.js",
+      "static/chunks/684-5ea027e881d74d13.js",
+      "static/chunks/main-app-eb9ce9da3564b719.js",
+      "static/chunks/app/sitemap.xml/route-9532cca671022f50.js"
+    ],
+    "/codigo-postal/[slug]/page": [
+      "static/chunks/webpack-7f168d1886c817f0.js",
+      "static/chunks/4bd1b696-647ed93fb4e77618.js",
+      "static/chunks/684-5ea027e881d74d13.js",
+      "static/chunks/main-app-eb9ce9da3564b719.js",
+      "static/chunks/874-b1c51c32ac41a820.js",
+      "static/chunks/app/codigo-postal/[slug]/page-474dd929b16e0873.js"
     ],
     "/page": [
-      "static/chunks/src_app_globals_b805903d.css",
-      "static/chunks/node_modules_next_7c89e613._.js",
-      "static/chunks/src_components_03ef435b._.js",
-      "static/chunks/src_app_layout_tsx_c0237562._.js",
-      "static/chunks/src_components_AdSlot_tsx_8aedb3b2._.js",
-      "static/chunks/src_app_page_tsx_0d778012._.js",
-      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
-      "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
-      "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",
-      "static/chunks/node_modules_next_dist_2ecbf5fa._.js",
-      "static/chunks/node_modules_@swc_helpers_cjs_00636ac3._.js",
-      "static/chunks/_e69f0d32._.js",
-      "static/chunks/_93808211._.js"
+      "static/chunks/webpack-7f168d1886c817f0.js",
+      "static/chunks/4bd1b696-647ed93fb4e77618.js",
+      "static/chunks/684-5ea027e881d74d13.js",
+      "static/chunks/main-app-eb9ce9da3564b719.js",
+      "static/chunks/874-b1c51c32ac41a820.js",
+      "static/chunks/63-143b30dbbfb3ec3e.js",
+      "static/chunks/app/page-93ff2f11c8eef449.js"
+    ],
+    "/feriados/page": [
+      "static/chunks/webpack-7f168d1886c817f0.js",
+      "static/chunks/4bd1b696-647ed93fb4e77618.js",
+      "static/chunks/684-5ea027e881d74d13.js",
+      "static/chunks/main-app-eb9ce9da3564b719.js",
+      "static/chunks/874-b1c51c32ac41a820.js",
+      "static/chunks/app/feriados/page-47bb47f86dea07aa.js"
+    ],
+    "/iban/page": [
+      "static/chunks/webpack-7f168d1886c817f0.js",
+      "static/chunks/4bd1b696-647ed93fb4e77618.js",
+      "static/chunks/684-5ea027e881d74d13.js",
+      "static/chunks/main-app-eb9ce9da3564b719.js",
+      "static/chunks/874-b1c51c32ac41a820.js",
+      "static/chunks/app/iban/page-9c5e6cda351a00eb.js"
+    ],
+    "/nif/page": [
+      "static/chunks/webpack-7f168d1886c817f0.js",
+      "static/chunks/4bd1b696-647ed93fb4e77618.js",
+      "static/chunks/684-5ea027e881d74d13.js",
+      "static/chunks/main-app-eb9ce9da3564b719.js",
+      "static/chunks/874-b1c51c32ac41a820.js",
+      "static/chunks/app/nif/page-d60d2a05d27f8dee.js"
+    ],
+    "/codigo-postal/page": [
+      "static/chunks/webpack-7f168d1886c817f0.js",
+      "static/chunks/4bd1b696-647ed93fb4e77618.js",
+      "static/chunks/684-5ea027e881d74d13.js",
+      "static/chunks/main-app-eb9ce9da3564b719.js",
+      "static/chunks/874-b1c51c32ac41a820.js",
+      "static/chunks/app/codigo-postal/page-28cdbec60c0d6cad.js"
+    ],
+    "/simuladores/credito-habitacao/page": [
+      "static/chunks/webpack-7f168d1886c817f0.js",
+      "static/chunks/4bd1b696-647ed93fb4e77618.js",
+      "static/chunks/684-5ea027e881d74d13.js",
+      "static/chunks/main-app-eb9ce9da3564b719.js",
+      "static/chunks/874-b1c51c32ac41a820.js",
+      "static/chunks/app/simuladores/credito-habitacao/page-69c866555cff09af.js"
+    ],
+    "/localidades/page": [
+      "static/chunks/webpack-7f168d1886c817f0.js",
+      "static/chunks/4bd1b696-647ed93fb4e77618.js",
+      "static/chunks/684-5ea027e881d74d13.js",
+      "static/chunks/main-app-eb9ce9da3564b719.js",
+      "static/chunks/874-b1c51c32ac41a820.js",
+      "static/chunks/app/localidades/page-7fa11627a904a457.js"
+    ],
+    "/simuladores/salario-liquido/page": [
+      "static/chunks/webpack-7f168d1886c817f0.js",
+      "static/chunks/4bd1b696-647ed93fb4e77618.js",
+      "static/chunks/684-5ea027e881d74d13.js",
+      "static/chunks/main-app-eb9ce9da3564b719.js",
+      "static/chunks/874-b1c51c32ac41a820.js",
+      "static/chunks/app/simuladores/salario-liquido/page-20b66acd3de088a9.js"
+    ],
+    "/localidades/[distrito]/page": [
+      "static/chunks/webpack-7f168d1886c817f0.js",
+      "static/chunks/4bd1b696-647ed93fb4e77618.js",
+      "static/chunks/684-5ea027e881d74d13.js",
+      "static/chunks/main-app-eb9ce9da3564b719.js",
+      "static/chunks/874-b1c51c32ac41a820.js",
+      "static/chunks/app/localidades/[distrito]/page-c180b642ec4e83d2.js"
+    ],
+    "/simuladores/iva/page": [
+      "static/chunks/webpack-7f168d1886c817f0.js",
+      "static/chunks/4bd1b696-647ed93fb4e77618.js",
+      "static/chunks/684-5ea027e881d74d13.js",
+      "static/chunks/main-app-eb9ce9da3564b719.js",
+      "static/chunks/874-b1c51c32ac41a820.js",
+      "static/chunks/app/simuladores/iva/page-66914d0f511ebeeb.js"
+    ],
+    "/simuladores/juros-compostos/page": [
+      "static/chunks/webpack-7f168d1886c817f0.js",
+      "static/chunks/4bd1b696-647ed93fb4e77618.js",
+      "static/chunks/684-5ea027e881d74d13.js",
+      "static/chunks/main-app-eb9ce9da3564b719.js",
+      "static/chunks/874-b1c51c32ac41a820.js",
+      "static/chunks/app/simuladores/juros-compostos/page-b6dc1249d16e2a02.js"
+    ],
+    "/simuladores/page": [
+      "static/chunks/webpack-7f168d1886c817f0.js",
+      "static/chunks/4bd1b696-647ed93fb4e77618.js",
+      "static/chunks/684-5ea027e881d74d13.js",
+      "static/chunks/main-app-eb9ce9da3564b719.js",
+      "static/chunks/874-b1c51c32ac41a820.js",
+      "static/chunks/app/simuladores/page-53594fa9cd37dcdd.js"
+    ],
+    "/localidades/[distrito]/[concelho]/page": [
+      "static/chunks/webpack-7f168d1886c817f0.js",
+      "static/chunks/4bd1b696-647ed93fb4e77618.js",
+      "static/chunks/684-5ea027e881d74d13.js",
+      "static/chunks/main-app-eb9ce9da3564b719.js",
+      "static/chunks/874-b1c51c32ac41a820.js",
+      "static/chunks/app/localidades/[distrito]/[concelho]/page-6cbd75ea3205aae4.js"
     ]
   }
 }
