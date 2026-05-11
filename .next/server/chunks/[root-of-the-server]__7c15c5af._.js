@@ -95,7 +95,7 @@ function normalize(s) {
 }
 function loadOnce() {
     if (rows) return rows;
-    const filePath = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$path__$5b$external$5d$__$28$path$2c$__cjs$29$__["join"])(process.cwd(), "src/lib/data/codigos-postais.json");
+    const filePath = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$path__$5b$external$5d$__$28$path$2c$__cjs$29$__["join"])(process.cwd(), "data/codigos-postais.json");
     rows = JSON.parse((0, __TURBOPACK__imported__module__$5b$externals$5d2f$fs__$5b$external$5d$__$28$fs$2c$__cjs$29$__["readFileSync"])(filePath, "utf-8"));
     prefixIndex = new Map();
     for(let i = 0; i < rows.length; i++){

@@ -1,7 +1,0 @@
-User-Agent: *
-Allow: /
-Disallow: /api/
-Disallow: /_next/
-
-Host: https://portugalpratico.pt
-Sitemap: https://portugalpratico.pt/sitemap.xml

@@ -34,7 +34,7 @@ function normalize(s: string): string {
 function loadOnce(): Row[] {
   if (rows) return rows;
 
-  const filePath = join(process.cwd(), "src/lib/data/codigos-postais.json");
+  const filePath = join(process.cwd(), "data/codigos-postais.json");
   rows = JSON.parse(readFileSync(filePath, "utf-8")) as Row[];
 
   prefixIndex = new Map<string, number[]>();

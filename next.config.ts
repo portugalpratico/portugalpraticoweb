@@ -4,6 +4,11 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  experimental: {
+    outputFileTracingIncludes: {
+      "/api/codigo-postal": ["./data/codigos-postais.json"],
+    },
+  },
   compress: true,
   poweredByHeader: false,
   headers: async () => [
