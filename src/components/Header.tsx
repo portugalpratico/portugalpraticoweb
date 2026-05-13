@@ -48,17 +48,17 @@ export default function Header() {
             <Image
               src="/logo_horizontal_white.png"
               alt="Portugal Prático"
-              width={238}
-              height={119}
-              className="h-13 w-auto dark:hidden"
+              width={1774}
+              height={339}
+              className="h-9 w-auto dark:hidden"
               priority
             />
             <Image
               src="/logo_horizontal_dark.png"
               alt="Portugal Prático"
-              width={238}
-              height={119}
-              className="h-13 w-auto hidden dark:block"
+              width={1774}
+              height={335}
+              className="h-9 w-auto hidden dark:block"
               priority
             />
           </Link>

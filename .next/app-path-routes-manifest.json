@@ -5,16 +5,16 @@
   "/sitemap.xml/route": "/sitemap.xml",
   "/codigo-postal/[slug]/page": "/codigo-postal/[slug]",
   "/page": "/",
-  "/feriados/page": "/feriados",
-  "/iban/page": "/iban",
-  "/nif/page": "/nif",
   "/codigo-postal/page": "/codigo-postal",
-  "/simuladores/credito-habitacao/page": "/simuladores/credito-habitacao",
+  "/iban/page": "/iban",
+  "/feriados/page": "/feriados",
   "/localidades/page": "/localidades",
-  "/simuladores/salario-liquido/page": "/simuladores/salario-liquido",
+  "/nif/page": "/nif",
+  "/localidades/[distrito]/[concelho]/page": "/localidades/[distrito]/[concelho]",
   "/localidades/[distrito]/page": "/localidades/[distrito]",
+  "/simuladores/credito-habitacao/page": "/simuladores/credito-habitacao",
   "/simuladores/iva/page": "/simuladores/iva",
   "/simuladores/juros-compostos/page": "/simuladores/juros-compostos",
   "/simuladores/page": "/simuladores",
-  "/localidades/[distrito]/[concelho]/page": "/localidades/[distrito]/[concelho]"
+  "/simuladores/salario-liquido/page": "/simuladores/salario-liquido"
 }

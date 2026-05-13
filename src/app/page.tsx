@@ -87,18 +87,20 @@ export default function HomePage() {
               <Image
                 src="/logo_white.png"
                 alt="Portugal Prático"
-                width={480}
-                height={160}
+                width={827}
+                height={422}
                 className="h-28 sm:h-36 lg:h-44 w-auto drop-shadow-sm dark:hidden"
                 priority
+                fetchPriority="high"
               />
               <Image
                 src="/logo_dark.png"
                 alt="Portugal Prático"
-                width={480}
-                height={160}
+                width={827}
+                height={396}
                 className="h-28 sm:h-36 lg:h-44 w-auto drop-shadow-sm hidden dark:block"
                 priority
+                fetchPriority="high"
               />
             </div>
             <p className="text-base sm:text-lg text-gray-500 dark:text-gray-400 mb-8 leading-relaxed max-w-xl mx-auto">
@@ -122,7 +124,7 @@ export default function HomePage() {
               </button>
             </form>
 
-            <p className="text-xs text-gray-400 dark:text-gray-500 mt-3">
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-3">
               Ex: &quot;1000-001&quot;, &quot;Rua Augusta Lisboa&quot;, &quot;Porto&quot;
             </p>
           </div>

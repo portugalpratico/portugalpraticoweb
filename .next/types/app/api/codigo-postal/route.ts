@@ -1,4 +1,4 @@
-// File: C:\Users\Edward\source\repos\portugalpraticoweb\src\app\api\codigo-postal\route.ts
+// File: c:\Users\Edward\source\repos\portugalpraticoweb\src\app\api\codigo-postal\route.ts
 import * as entry from '../../../../../src/app/api/codigo-postal/route.js'
 import type { NextRequest } from 'next/server.js'
 

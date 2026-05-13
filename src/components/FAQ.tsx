@@ -34,7 +34,7 @@ export default function FAQ({ items, title = "Perguntas Frequentes" }: { items: 
               >
                 <span className="font-medium text-gray-900 dark:text-gray-100 text-sm">{item.question}</span>
                 <svg
-                  className={`w-4 h-4 text-gray-400 dark:text-gray-500 transition-transform shrink-0 ml-3 ${open === i ? "rotate-180" : ""}`}
+                  className={`w-4 h-4 text-gray-500 dark:text-gray-400 transition-transform shrink-0 ml-3 ${open === i ? "rotate-180" : ""}`}
                   fill="none" stroke="currentColor" viewBox="0 0 24 24"
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />

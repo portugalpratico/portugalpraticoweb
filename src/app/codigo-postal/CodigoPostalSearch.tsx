@@ -107,7 +107,7 @@ export default function CodigoPostalSearch() {
               {results.length === 50 ? "50+" : results.length}{" "}
               resultado{results.length !== 1 ? "s" : ""} encontrado{results.length !== 1 ? "s" : ""}
             </span>
-            {ms !== null && <span className="text-xs text-gray-400 dark:text-gray-500">{ms}ms</span>}
+            {ms !== null && <span className="text-xs text-gray-500 dark:text-gray-400">{ms}ms</span>}
           </div>
           <div className="divide-y divide-gray-50 dark:divide-gray-700">
             {results.map((r, i) => (
@@ -125,7 +125,7 @@ export default function CodigoPostalSearch() {
                 </div>
                 <button
                   onClick={() => navigator.clipboard?.writeText(r.codigoCompleto)}
-                  className="shrink-0 text-xs text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 px-2 py-1 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-gray-300 dark:hover:border-gray-500 transition-colors"
+                  className="shrink-0 text-xs text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 px-2 py-1 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-gray-300 dark:hover:border-gray-500 transition-colors"
                 >
                   Copiar
                 </button>
@@ -135,7 +135,7 @@ export default function CodigoPostalSearch() {
         </div>
       )}
 
-      <div className="text-xs text-gray-400 dark:text-gray-500 text-center">
+      <div className="text-xs text-gray-500 dark:text-gray-400 text-center">
         Base de dados CTT · {(324180).toLocaleString("pt-PT")} códigos postais
       </div>
     </div>

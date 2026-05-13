@@ -62,11 +62,11 @@ export default function LocalidadesPage() {
               <div className="grid grid-cols-3 gap-2 text-center">
                 <div className="bg-gray-50 dark:bg-gray-700 rounded-lg py-1.5">
                   <p className="font-semibold text-gray-800 dark:text-gray-200 text-sm">{d.concelhos.length}</p>
-                  <p className="text-xs text-gray-400 dark:text-gray-500">concelhos</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">concelhos</p>
                 </div>
                 <div className="bg-gray-50 dark:bg-gray-700 rounded-lg py-1.5">
                   <p className="font-semibold text-gray-800 dark:text-gray-200 text-sm">{totalFreg}</p>
-                  <p className="text-xs text-gray-400 dark:text-gray-500">freg.</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">freg.</p>
                 </div>
                 <div className="bg-gray-50 dark:bg-gray-700 rounded-lg py-1.5">
                   <p className="font-semibold text-gray-800 dark:text-gray-200 text-sm">
@@ -74,10 +74,10 @@ export default function LocalidadesPage() {
                       ? `${(d.populacao / 1_000_000).toFixed(1)}M`
                       : `${Math.round(d.populacao / 1000)}k`}
                   </p>
-                  <p className="text-xs text-gray-400 dark:text-gray-500">hab.</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">hab.</p>
                 </div>
               </div>
-              <p className="text-xs text-gray-400 dark:text-gray-500 mt-2">Capital: {d.capital}</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">Capital: {d.capital}</p>
             </Link>
           );
         })}

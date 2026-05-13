@@ -105,9 +105,9 @@ export default async function DistritoPage({ params }: Props) {
                       {c.nome}
                     </h3>
                     <div className="flex flex-wrap gap-x-3 gap-y-0.5 mt-1">
-                      <span className="text-xs text-gray-400 dark:text-gray-500">{c.populacao.toLocaleString("pt-PT")} hab.</span>
-                      <span className="text-xs text-gray-400 dark:text-gray-500">{c.area} km²</span>
-                      <span className="text-xs text-gray-400 dark:text-gray-500">{c.freguesias} freg.</span>
+                      <span className="text-xs text-gray-500 dark:text-gray-400">{c.populacao.toLocaleString("pt-PT")} hab.</span>
+                      <span className="text-xs text-gray-500 dark:text-gray-400">{c.area} km²</span>
+                      <span className="text-xs text-gray-500 dark:text-gray-400">{c.freguesias} freg.</span>
                     </div>
                     <p className="text-xs text-gray-500 dark:text-gray-400 mt-1.5 leading-relaxed line-clamp-2">{c.descricao}</p>
                   </div>
@@ -142,7 +142,7 @@ export default async function DistritoPage({ params }: Props) {
 function Stat({ label, value }: { label: string; value: string }) {
   return (
     <div className="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl px-4 py-2.5 text-center shadow-card">
-      <p className="text-xs text-gray-400 dark:text-gray-500 mb-0.5">{label}</p>
+      <p className="text-xs text-gray-500 dark:text-gray-400 mb-0.5">{label}</p>
       <p className="font-bold text-gray-900 dark:text-gray-100 text-sm">{value}</p>
     </div>
   );

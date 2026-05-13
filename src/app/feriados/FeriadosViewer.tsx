@@ -52,7 +52,7 @@ export default function FeriadosViewer({ feriados }: Props) {
         <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 overflow-hidden shadow-card">
           <div className="px-5 py-3 bg-gray-50 dark:bg-gray-900/50 border-b border-gray-100 dark:border-gray-700 flex items-center justify-between">
             <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">Feriados Nacionais {selectedYear}</span>
-            <span className="text-xs text-gray-400 dark:text-gray-500">{list.length} feriados</span>
+            <span className="text-xs text-gray-500 dark:text-gray-400">{list.length} feriados</span>
           </div>
           <table className="w-full text-sm">
             <thead className="bg-gray-50 dark:bg-gray-900/50 border-b border-gray-100 dark:border-gray-700">
