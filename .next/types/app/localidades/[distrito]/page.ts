@@ -1,4 +1,4 @@
-// File: c:\Users\Edward\source\repos\portugalpraticoweb\src\app\localidades\[distrito]\page.tsx
+// File: C:\Users\Edward\source\repos\portugalpraticoweb\src\app\localidades\[distrito]\page.tsx
 import * as entry from '../../../../../src/app/localidades/[distrito]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

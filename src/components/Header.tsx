@@ -50,6 +50,7 @@ export default function Header() {
               alt="Portugal Prático"
               width={1774}
               height={339}
+              sizes="190px"
               className="h-9 w-auto dark:hidden"
               priority
             />
@@ -58,6 +59,7 @@ export default function Header() {
               alt="Portugal Prático"
               width={1774}
               height={335}
+              sizes="190px"
               className="h-9 w-auto hidden dark:block"
               priority
             />

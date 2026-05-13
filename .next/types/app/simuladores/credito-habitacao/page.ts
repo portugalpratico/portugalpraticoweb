@@ -1,4 +1,4 @@
-// File: c:\Users\Edward\source\repos\portugalpraticoweb\src\app\simuladores\credito-habitacao\page.tsx
+// File: C:\Users\Edward\source\repos\portugalpraticoweb\src\app\simuladores\credito-habitacao\page.tsx
 import * as entry from '../../../../../src/app/simuladores/credito-habitacao/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

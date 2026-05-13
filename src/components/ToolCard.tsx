@@ -12,7 +12,7 @@ interface ToolCardProps {
 export default function ToolCard({ title, description, href, icon, badge, badgeColor = "green" }: ToolCardProps) {
   const badgeClasses = {
     green: "bg-green-50 dark:bg-green-900/30 text-[#046A38] dark:text-green-400",
-    red: "bg-red-50 dark:bg-red-900/30 text-[#DA291C] dark:text-red-400",
+    red: "bg-red-50 dark:bg-red-900/30 text-red-700 dark:text-red-400",
     gray: "bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300",
   };
 

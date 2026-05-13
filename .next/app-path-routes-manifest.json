@@ -8,13 +8,13 @@
   "/codigo-postal/page": "/codigo-postal",
   "/iban/page": "/iban",
   "/feriados/page": "/feriados",
-  "/localidades/page": "/localidades",
   "/nif/page": "/nif",
-  "/localidades/[distrito]/[concelho]/page": "/localidades/[distrito]/[concelho]",
-  "/localidades/[distrito]/page": "/localidades/[distrito]",
   "/simuladores/credito-habitacao/page": "/simuladores/credito-habitacao",
+  "/localidades/page": "/localidades",
+  "/localidades/[distrito]/page": "/localidades/[distrito]",
+  "/localidades/[distrito]/[concelho]/page": "/localidades/[distrito]/[concelho]",
   "/simuladores/iva/page": "/simuladores/iva",
   "/simuladores/juros-compostos/page": "/simuladores/juros-compostos",
-  "/simuladores/page": "/simuladores",
-  "/simuladores/salario-liquido/page": "/simuladores/salario-liquido"
+  "/simuladores/salario-liquido/page": "/simuladores/salario-liquido",
+  "/simuladores/page": "/simuladores"
 }

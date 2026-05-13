@@ -1,4 +1,4 @@
-// File: c:\Users\Edward\source\repos\portugalpraticoweb\src\app\simuladores\juros-compostos\page.tsx
+// File: C:\Users\Edward\source\repos\portugalpraticoweb\src\app\simuladores\juros-compostos\page.tsx
 import * as entry from '../../../../../src/app/simuladores/juros-compostos/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

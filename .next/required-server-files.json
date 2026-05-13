@@ -100,7 +100,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "c:\\Users\\Edward\\source\\repos\\portugalpraticoweb",
+    "outputFileTracingRoot": "C:\\Users\\Edward\\source\\repos\\portugalpraticoweb",
     "experimental": {
       "useSkewCookie": false,
       "cacheLife": {
@@ -290,10 +290,10 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "c:\\Users\\Edward\\source\\repos\\portugalpraticoweb"
+      "root": "C:\\Users\\Edward\\source\\repos\\portugalpraticoweb"
     }
   },
-  "appDir": "c:\\Users\\Edward\\source\\repos\\portugalpraticoweb",
+  "appDir": "C:\\Users\\Edward\\source\\repos\\portugalpraticoweb",
   "relativeAppDir": "",
   "files": [
     ".next\\routes-manifest.json",

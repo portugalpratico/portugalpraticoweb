@@ -89,6 +89,7 @@ export default function HomePage() {
                 alt="Portugal Prático"
                 width={827}
                 height={422}
+                sizes="(max-width: 640px) 220px, (max-width: 1024px) 280px, 350px"
                 className="h-28 sm:h-36 lg:h-44 w-auto drop-shadow-sm dark:hidden"
                 priority
                 fetchPriority="high"
@@ -98,6 +99,7 @@ export default function HomePage() {
                 alt="Portugal Prático"
                 width={827}
                 height={396}
+                sizes="(max-width: 640px) 220px, (max-width: 1024px) 280px, 350px"
                 className="h-28 sm:h-36 lg:h-44 w-auto drop-shadow-sm hidden dark:block"
                 priority
                 fetchPriority="high"
