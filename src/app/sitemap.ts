@@ -9,24 +9,26 @@ const distritos = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const now = new Date();
   const staticPages = [
-    { url: siteUrl, priority: 1.0, changeFrequency: "daily" as const },
-    { url: `${siteUrl}/codigo-postal`, priority: 0.9, changeFrequency: "weekly" as const },
-    { url: `${siteUrl}/simuladores`, priority: 0.9, changeFrequency: "monthly" as const },
-    { url: `${siteUrl}/simuladores/salario-liquido`, priority: 0.8, changeFrequency: "monthly" as const },
-    { url: `${siteUrl}/simuladores/iva`, priority: 0.8, changeFrequency: "monthly" as const },
-    { url: `${siteUrl}/simuladores/juros-compostos`, priority: 0.7, changeFrequency: "monthly" as const },
-    { url: `${siteUrl}/simuladores/credito-habitacao`, priority: 0.8, changeFrequency: "monthly" as const },
-    { url: `${siteUrl}/nif`, priority: 0.8, changeFrequency: "monthly" as const },
-    { url: `${siteUrl}/iban`, priority: 0.8, changeFrequency: "monthly" as const },
-    { url: `${siteUrl}/feriados`, priority: 0.8, changeFrequency: "yearly" as const },
-    { url: `${siteUrl}/localidades`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: siteUrl, priority: 1.0, changeFrequency: "daily" as const, lastModified: now },
+    { url: `${siteUrl}/codigo-postal`, priority: 0.9, changeFrequency: "weekly" as const, lastModified: now },
+    { url: `${siteUrl}/simuladores`, priority: 0.9, changeFrequency: "monthly" as const, lastModified: now },
+    { url: `${siteUrl}/simuladores/salario-liquido`, priority: 0.8, changeFrequency: "monthly" as const, lastModified: now },
+    { url: `${siteUrl}/simuladores/iva`, priority: 0.8, changeFrequency: "monthly" as const, lastModified: now },
+    { url: `${siteUrl}/simuladores/juros-compostos`, priority: 0.7, changeFrequency: "monthly" as const, lastModified: now },
+    { url: `${siteUrl}/simuladores/credito-habitacao`, priority: 0.8, changeFrequency: "monthly" as const, lastModified: now },
+    { url: `${siteUrl}/nif`, priority: 0.8, changeFrequency: "monthly" as const, lastModified: now },
+    { url: `${siteUrl}/iban`, priority: 0.8, changeFrequency: "monthly" as const, lastModified: now },
+    { url: `${siteUrl}/feriados`, priority: 0.8, changeFrequency: "yearly" as const, lastModified: now },
+    { url: `${siteUrl}/localidades`, priority: 0.8, changeFrequency: "monthly" as const, lastModified: now },
   ];
 
   const distritoPages = distritos.map((d) => ({
     url: `${siteUrl}/localidades/${d}`,
     priority: 0.6,
     changeFrequency: "monthly" as const,
+    lastModified: now,
   }));
 
   return [...staticPages, ...distritoPages];

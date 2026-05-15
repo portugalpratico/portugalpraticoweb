@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import ToolCard from "@/components/ToolCard";
@@ -13,6 +14,10 @@ import {
   IconInterest,
   IconHome,
 } from "@/components/Icons";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 const categories = [
   { label: "Códigos Postais", href: "/codigo-postal", icon: <IconPostal />, color: "bg-blue-50 text-blue-600" },
