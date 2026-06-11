@@ -67,6 +67,14 @@ export default function Footer() {
             ))}
           </div>
         </div>
+        <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-800 flex justify-center">
+          <p className="text-xs text-gray-400 dark:text-gray-500">
+            Desenvolvido por{" "}
+            <a href="https://www.primestudio.pt/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+              PrimeStudio
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
