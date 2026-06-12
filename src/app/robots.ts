@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://portugalpratico.netlify.app";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.portugalpratico.pt";
 
 export default function robots(): MetadataRoute.Robots {
   return {

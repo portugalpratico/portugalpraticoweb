@@ -121,7 +121,7 @@ cat netlify.toml
 ```bash
 # Via CLI
 netlify env:set DATABASE_URL "postgresql://USER:PASS@HOST:5432/portugalpratico"
-netlify env:set NEXT_PUBLIC_SITE_URL "https://SEU-SITE.netlify.app"
+netlify env:set NEXT_PUBLIC_SITE_URL "https://www.portugalpratico.pt"
 netlify env:set NEXT_PUBLIC_ADSENSE_ID "ca-pub-XXXXXXXXXXXXXXXX"
 
 # Ou via painel web:
