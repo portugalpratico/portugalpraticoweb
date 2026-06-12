@@ -407,7 +407,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ThemePr
 ;
 ;
 ;
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://portugalpratico.netlify.app";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.portugalpratico.pt";
 const metadata = {
     metadataBase: new URL(siteUrl),
     title: {

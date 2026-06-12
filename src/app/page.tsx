@@ -27,6 +27,41 @@ const categories = [
   { label: "Feriados", href: "/feriados", icon: <IconCalendar />, color: "bg-red-50 text-[#DA291C]" },
 ];
 
+const externalLinks = [
+  {
+    title: "Portal das Finanças",
+    description: "Aceda ao portal da Autoridade Tributária para IRS, faturas e serviços fiscais.",
+    href: "https://www.portaldasfinancas.gov.pt",
+    logo: "/logos/financas.png",
+    logoBg: "bg-white",
+    color: "bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300",
+  },
+  {
+    title: "Renovação de Autorização de Residência",
+    description: "Portal da AIMA para pedidos e renovações de autorização de residência em Portugal.",
+    href: "https://portal-renovacoes.aima.gov.pt/",
+    logo: "/logos/aima.png",
+    logoBg: "bg-white",
+    color: "bg-amber-50 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300",
+  },
+  {
+    title: "Segurança Social",
+    description: "Consulte prestações, contribuições e serviços da Segurança Social portuguesa.",
+    href: "https://www.seg-social.pt",
+    logo: "/logos/seg-social.svg",
+    logoBg: "bg-white",
+    color: "bg-green-50 text-green-700 dark:bg-green-900/30 dark:text-green-300",
+  },
+  {
+    title: "e-Fatura",
+    description: "Consulte e valide as suas faturas no portal e-Fatura das Finanças.",
+    href: "https://faturas.portaldasfinancas.gov.pt",
+    logo: "/logos/efatura.svg",
+    logoBg: "bg-[#1a56a0]",
+    color: "bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300",
+  },
+];
+
 const popularTools = [
   {
     title: "Simulador Salário Líquido",
@@ -141,6 +176,48 @@ export default function HomePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         {/* Ad top */}
         <AdSlot format="horizontal" className="mb-10" />
+
+        {/* Links Úteis */}
+        <section className="mb-12">
+          <h2 className="section-title mb-6">Links Úteis</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {externalLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col gap-4 p-5 bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200 group"
+              >
+                {/* Logo area */}
+                <div className={`w-full h-20 rounded-xl flex items-center justify-center overflow-hidden p-3 ${link.logoBg}`}>
+                  <Image
+                    src={link.logo}
+                    alt={`Logo ${link.title}`}
+                    width={200}
+                    height={80}
+                    className="max-h-full w-auto object-contain"
+                    unoptimized
+                  />
+                </div>
+                {/* Info */}
+                <div className="flex items-start justify-between gap-2">
+                  <div>
+                    <h3 className="font-semibold text-gray-900 dark:text-gray-100 text-sm mb-1 group-hover:text-[#046A38] dark:group-hover:text-green-400 transition-colors">
+                      {link.title}
+                    </h3>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
+                      {link.description}
+                    </p>
+                  </div>
+                  <svg className="w-4 h-4 text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
 
         {/* Categories */}
         <section className="mb-12">
