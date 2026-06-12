@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -63,10 +62,12 @@ export default function RootLayout({
     <html lang="pt-PT" className={inter.variable} suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <Script
+        {/* Google AdSense — must be async in <head> for verification */}
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script
+          async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8340172955044180"
           crossOrigin="anonymous"
-          strategy="lazyOnload"
         />
         <script
           type="application/ld+json"
