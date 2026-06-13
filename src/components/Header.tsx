@@ -12,6 +12,7 @@ const nav = [
   { label: "NIF & IBAN", href: "/nif" },
   { label: "Localidades", href: "/localidades" },
   { label: "Feriados", href: "/feriados" },
+  { label: "Notícias", href: "/noticias" },
 ];
 
 function ThemeToggle() {

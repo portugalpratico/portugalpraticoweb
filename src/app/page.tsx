@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { Suspense } from "react";
 import ToolCard from "@/components/ToolCard";
 import AdSlot from "@/components/AdSlot";
+import TrendingNews from "@/components/TrendingNews";
 import {
   IconPostal,
   IconNif,
@@ -249,6 +251,11 @@ export default function HomePage() {
             ))}
           </div>
         </section>
+
+        {/* Trending news */}
+        <Suspense fallback={null}>
+          <TrendingNews limit={6} />
+        </Suspense>
 
         {/* Ad mid */}
         <AdSlot format="horizontal" className="mb-12" />

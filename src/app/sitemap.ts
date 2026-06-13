@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/iban`, priority: 0.8, changeFrequency: "monthly" as const, lastModified: now },
     { url: `${siteUrl}/feriados`, priority: 0.8, changeFrequency: "yearly" as const, lastModified: now },
     { url: `${siteUrl}/localidades`, priority: 0.8, changeFrequency: "monthly" as const, lastModified: now },
+    { url: `${siteUrl}/noticias`, priority: 0.8, changeFrequency: "hourly" as const, lastModified: now },
   ];
 
   const distritoPages = distritos.map((d) => ({
