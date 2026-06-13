@@ -65,6 +65,15 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../src/app/contacto/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/contacto">> = Specific
+  const handler = {} as typeof import("../../src/app/contacto/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../src/app/feriados/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/feriados">> = Specific
@@ -137,6 +146,15 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../src/app/privacidade/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/privacidade">> = Specific
+  const handler = {} as typeof import("../../src/app/privacidade/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../src/app/simuladores/credito-habitacao/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/simuladores/credito-habitacao">> = Specific
@@ -177,6 +195,15 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   type __IsExpected<Specific extends AppPageConfig<"/simuladores/salario-liquido">> = Specific
   const handler = {} as typeof import("../../src/app/simuladores/salario-liquido/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/termos/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/termos">> = Specific
+  const handler = {} as typeof import("../../src/app/termos/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check

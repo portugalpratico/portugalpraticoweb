@@ -23,6 +23,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/feriados`, priority: 0.8, changeFrequency: "yearly" as const, lastModified: now },
     { url: `${siteUrl}/localidades`, priority: 0.8, changeFrequency: "monthly" as const, lastModified: now },
     { url: `${siteUrl}/noticias`, priority: 0.8, changeFrequency: "hourly" as const, lastModified: now },
+    { url: `${siteUrl}/privacidade`, priority: 0.3, changeFrequency: "yearly" as const, lastModified: now },
+    { url: `${siteUrl}/termos`, priority: 0.3, changeFrequency: "yearly" as const, lastModified: now },
+    { url: `${siteUrl}/contacto`, priority: 0.3, changeFrequency: "yearly" as const, lastModified: now },
   ];
 
   const distritoPages = distritos.map((d) => ({
