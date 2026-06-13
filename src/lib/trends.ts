@@ -26,7 +26,7 @@ function extractTag(content: string, tag: string): string {
   const match = content.match(new RegExp(`<${escaped}[^>]*>([\\s\\S]*?)<\\/${escaped}>`));
   if (!match) return "";
   const raw = match[1].trim();
-  const cdata = raw.match(/^<!\[CDATA\[([\s\S]*?)\]\]>$/s);
+  const cdata = raw.match(/^<!\[CDATA\[([\s\S]*?)\]\]>$/);
   return decodeEntities(cdata ? cdata[1].trim() : raw);
 }
 
