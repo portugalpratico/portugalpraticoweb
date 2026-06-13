@@ -189,7 +189,7 @@ async function fetchTrends(limit = 20) {
     try {
         const res = await fetch("https://trends.google.com/trending/rss?geo=PT", {
             next: {
-                revalidate: 21600
+                revalidate: 14400
             }
         });
         if (!res.ok) return [];

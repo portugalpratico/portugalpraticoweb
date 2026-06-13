@@ -7,12 +7,12 @@ import { usePathname } from "next/navigation";
 import { useTheme } from "./ThemeProvider";
 
 const nav = [
+  { label: "Notícias", href: "/noticias" },
   { label: "Código Postal", href: "/codigo-postal" },
   { label: "Simuladores", href: "/simuladores" },
   { label: "NIF & IBAN", href: "/nif" },
   { label: "Localidades", href: "/localidades" },
   { label: "Feriados", href: "/feriados" },
-  { label: "Notícias", href: "/noticias" },
 ];
 
 function ThemeToggle() {

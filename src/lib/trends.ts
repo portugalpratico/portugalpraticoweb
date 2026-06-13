@@ -47,7 +47,7 @@ export async function fetchTrends(limit = 20): Promise<TrendItem[]> {
   try {
     const res = await fetch(
       "https://trends.google.com/trending/rss?geo=PT",
-      { next: { revalidate: 21600 } }
+      { next: { revalidate: 14400 } }
     );
     if (!res.ok) return [];
     const xml = await res.text();

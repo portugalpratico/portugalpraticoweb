@@ -21,7 +21,7 @@ function extractTag(content, tag) {
     const match = content.match(new RegExp(`<${escaped}[^>]*>([\\s\\S]*?)<\\/${escaped}>`));
     if (!match) return "";
     const raw = match[1].trim();
-    const cdata = raw.match(/^<!\[CDATA\[([\s\S]*?)\]\]>$/s);
+    const cdata = raw.match(/^<!\[CDATA\[([\s\S]*?)\]\]>$/);
     return decodeEntities(cdata ? cdata[1].trim() : raw);
 }
 function parseNewsItems(itemContent) {
@@ -47,7 +47,7 @@ async function fetchTrends(limit = 20) {
     try {
         const res = await fetch("https://trends.google.com/trending/rss?geo=PT", {
             next: {
-                revalidate: 21600
+                revalidate: 14400
             }
         });
         if (!res.ok) return [];

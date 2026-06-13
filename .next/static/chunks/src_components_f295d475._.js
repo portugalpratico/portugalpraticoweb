@@ -95,6 +95,10 @@ var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.sign
 ;
 var nav = [
     {
+        label: "Notícias",
+        href: "/noticias"
+    },
+    {
         label: "Código Postal",
         href: "/codigo-postal"
     },
@@ -113,10 +117,6 @@ var nav = [
     {
         label: "Feriados",
         href: "/feriados"
-    },
-    {
-        label: "Notícias",
-        href: "/noticias"
     }
 ];
 function ThemeToggle() {

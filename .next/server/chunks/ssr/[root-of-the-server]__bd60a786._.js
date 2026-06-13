@@ -96,6 +96,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ThemePr
 ;
 const nav = [
     {
+        label: "Notícias",
+        href: "/noticias"
+    },
+    {
         label: "Código Postal",
         href: "/codigo-postal"
     },
@@ -114,10 +118,6 @@ const nav = [
     {
         label: "Feriados",
         href: "/feriados"
-    },
-    {
-        label: "Notícias",
-        href: "/noticias"
     }
 ];
 function ThemeToggle() {
